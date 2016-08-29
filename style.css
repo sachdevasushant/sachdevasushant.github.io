@@ -1,0 +1,349 @@
+/* page overall: */
+
+html * { 
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+}
+ 
+body {
+    margin: 0.5em 0em 2em 0em;
+    font-size: 100%;
+    font-family: "Verdana", "Trebuchet MS", sans-serif;
+    line-height: 1.1em;
+    text-align: center;
+/*    color: #404040;*/
+ }
+ 
+#page { 
+    width: 70%; 
+    text-align: left;
+    max-width: 840pt;
+    margin-left: auto; 
+    margin-right: auto;  
+    position: relative;
+} 
+
+/* header: */
+
+#header {
+    position: relative; 
+    width: 100%;
+    height: 2em;
+    color: #000000;
+    vertical-align: middle;
+    text-align: left;
+
+    text-decoration: none;
+    font-family: "Verdana", "Trebuchet MS", sans-serif;
+    font-size: 1.9em;
+    line-height: 1.2em;
+    margin-top: 1em;
+} 
+
+/* left column: */
+
+#left {
+    width: 210px; 
+    float: left; 
+    position: relative; 
+    font-size: 0.8em;
+}
+
+div.left_box {
+    width: 90%;
+    margin-top: 1em;
+/*    background-color: #fff;
+    border-right: 0.18em solid #4284B5;
+    border-bottom: 0.16em solid #4284B5;*/
+
+}
+
+div.left_box h3, div#nav h3 {
+    margin: 0.5em 0em 0em 0em;
+    padding: 0.5em 0em 0em 0.1em;
+    font-size: 1.2em;
+    font-family: "Verdana", "Trebuchet MS", sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #000000;
+    line-height: 1.2em;
+}
+
+div.left_box p {
+    margin: 0em;
+    padding: 1em 1em 1em 1em;
+    font-size: 1.2em;
+}
+
+div.left_box a:link {
+    color: #2E668B;
+}
+    
+div.left_box a:visited {
+    color: #254A65; 
+}
+ 
+div.left_box a:hover, div.left_box a:active {
+    color: #000;
+}
+
+div.inner_box {
+/*    border-right: 0.15em solid #7BA5C6;
+    border-bottom: 0.15em solid #7BA5C6; */
+}
+
+
+
+/* content column: */
+
+#content {
+    float: right; 
+    display: inline; 
+    position: absolute; 
+    left: 220px;
+%    max-width: 600pt;
+    width:
+    background-color: #fff;
+
+    border-right: 0.2em solid #4284B5;
+    border-bottom: 0.2em solid #4284B5;
+}
+
+#content h1 {
+    clear: both;
+    margin: 0em 0em 0em 0em;
+    padding: 0.5em 0em 0em 0.1em;
+    font-size: 1.7em;
+    font-family: "Verdana", "Trebuchet MS", sans-serif;
+    color: #FF6300;
+    border-bottom: 0.05em solid #FF9853;
+    line-height: 1em;
+}
+
+#content h2 {
+    margin: 0.5em 0em 0em 0em;
+    padding: 0.5em 0em 0em 0.1em;
+    font-size: 1.4em;
+    font-family: "Verdana", "Trebuchet MS", sans-serif;
+    font-style: italic;
+    color: #FF6300;
+    line-height: 1em;
+}
+
+#content h3 {
+    margin: 0.5em 0em 0em 0em;
+    padding: 0.5em 0em 0em 0.1em;
+    font-size: 1.2em;
+    font-family: "Verdana", "Trebuchet MS", sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #000000;
+    line-height: 1.2em;
+}
+
+#content p {
+    margin: 0.5em 0em 0.5em 0em;
+    padding: 0.35em;
+    font-size: 1em;
+    line-height:1.4em;
+}
+
+div.abstract {
+    margin: 0em 2em 0em 0.3em;
+    padding: 0em 2em 0em 0.3em;
+    font-size: 0.9em;
+    /*font-style: italic;*/
+    line-height: 1.2em;
+    display: none;
+}
+
+#content a:link {
+    color: #2E668B;
+    text-decoration: none;
+}
+    
+#content a:visited {
+    Color: #255270; 
+}
+ 
+#content a:hover, #content a:active {
+    color: #000;
+}
+
+#content acronym {
+    border-bottom: 1px dotted #4284B5;
+    cursor: help;
+    margin: 0;
+    padding: 0;
+}
+
+#main {    
+    padding: 0.5em 1.5em 1.5em 0.7em;
+    border-bottom: 0.2em solid #7BA5C6;
+    border-right: 0.2em solid #7BA5C6;
+}
+
+#main ul{
+	border: 0px solid #000;
+	margin-left: 0.5em;
+	width : 100%;
+	padding: 0.5em 1.5em 1.0em 2.0em;
+}
+
+#main li{
+    padding: 0.2em 1.5em 0.5em 1.0em;
+    line-height: 1.2em;
+}
+
+#main ol{
+	border: 0px solid #000;
+	margin-left: 0.5em;
+	width : 100%;
+	padding: 0.5em 1.5em 1.0em 2.0em;
+}
+
+#title {
+    color: #000000;      
+    font-size: 1em;
+     padding: 0.25em 0em 0.25em 0em; 
+/*
+     color: #002A6E;
+*/
+}
+
+#title a:link{
+    color: #000000;
+}
+
+div.img_left, div.img_right {
+    border-bottom: 0.09em solid #4284B5;
+    border-right: 0.1em solid #4284B5;
+}
+
+div.img_left {
+    float: left; 
+    margin: 0.5em 0.8em 0em 0em;
+}
+
+div.img_right {
+    float: right; 
+    margin: 0.5em 0em 0em 0.8em;
+}
+
+div.img_left img, div.img_right img {
+    display: block;
+    border: 0.35em solid #7BA5C6;
+    margin: 0;
+    padding: 0;
+}
+
+/* this clears floating (e.g images) */
+br.clear {
+    clear: both;
+    display: none;
+}
+
+/*paper*/
+
+#paper{
+}
+
+
+
+
+
+/*
+#resume { 
+    padding: 0.5em 1.5em 1.5em 0.7em;
+    border: 0.2em solid #000000;
+    margin: 0.2em;
+    width: 95%;
+} 
+
+#address { 
+   text-align: right;
+} 
+
+#resume ul{
+	border: 0px solid #000;
+	margin-left: 0.5em;
+	width : 100%;
+	padding: 0.5em 1.5em 1.0em 2.0em;
+}
+*/
+/* footer: */
+/*
+#footer { 
+    margin: 0em;
+    padding: 0em;
+    font-size: 0.6em;
+    clear: both;
+    color: #027BC1;
+    text-align: right;
+} 
+
+#footer p {
+    margin: 0em;
+    padding: 0.1em;
+}
+
+#footer a:link, #footer a:visited { 
+    color: #027BC1;
+} 
+
+#footer a:hover, #footer a:active { 
+    color: #000000;
+} 
+
+#quote {
+    text-align: center;
+}
+*/
+#nav {
+    background-color: #fff;
+    width: 90%;   
+    border-right: 0.18em solid #4284B5;
+    border-bottom: 0.16em solid #4284B5;
+        margin: 0.5em 0em 0em 0em;
+    padding: 0.5em 0em 0em 0.1em;
+    font-size: 1.2em;
+    font-family: "Verdana", "Trebuchet MS", sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #000000;
+    line-height: 1.2em;
+}
+    
+#nav ul {
+    list-style-type: none;
+    padding: 0.5em 0em 0.9em 0em;
+}
+
+#nav ul li {
+    padding: 0.2em 0em 0.2em 0.9em;
+    margin-right: 0.3em;
+}
+
+#nav a:link{
+    color: #2E668B;
+    text-decoration: none;
+}
+
+#nav a:visited {
+    Color: #255270; 
+}
+ 
+#nav a:hover, #nav a:active {
+    color: #000;
+}
+
+#path {
+    font-family: "Verdana", "Trebuchet MS", sans-serif;
+    margin: 0em 0em 0em 0em;
+    padding: 0.4em 0.6em 0.4em 0.6em;
+    font-size: 0.9em;
+    color: #2F5E80;
+    background-color: #D0E7F4;
+    border-right: 0.23em solid #7BA5C6;
+}
