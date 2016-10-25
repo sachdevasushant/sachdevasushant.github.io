@@ -85,6 +85,72 @@
   <div id="pubs" class="section">
     <H3>List of Publications</H3>
 
+    
+              <div class="article">
+    <div class="title">A Framework for Analyzing Resparsification Algorithms</div>
+	
+	
+      <div class="conf">
+	<a href="https://www.siam.org/meetings/da17/da17_accepted.pdf"
+	target="_blank">
+	SODA 2017
+	</a>
+	</div>
+
+	<div class="author_list">
+	with
+	<span class="authors">
+	  Rasmus Kyng, Jakub Pachocki, Richard Peng
+	  </span>
+	</div>
+
+	<div class="link_list">
+	<div class="link">
+	    <a href="javascript:toggle('abstract21')">Abstract</a>
+	</div>
+	</div>
+	
+	<div id="abstract21" class="abstract"> <p> A spectral
+	  sparsifier of a graph G is a sparser graph H that
+	  approximately preserves the quadratic form of G, i.e., for
+	  all vectors x, \(x^{\top}L_G x \approx x^{\top}L_H x \) ,
+	  where \(L_G, L_H\) denote the respective graph
+	  Laplacians. Spectral sparsifiers generalize cut sparsifiers,
+	  and have found several applications in designing graph
+	  algorithms. In recent years, there has been interest in
+	  computing spectral sparsifiers in the semi-streaming and
+	  dynamic settings. Natural algorithms in these settings
+	  involve repeated sparsification of a dynamic graph. We
+	  present a framework for analyzing algorithms for graph
+	  sparsification that perform repeated sparsifications. The
+	  framework yields analyses that avoid a worst-case error
+	  accumulation across various resparsification steps, and only
+	  incur the error corresponding to a single sparsification
+	  step leading to better results.
+	  
+As an application, we show how to maintain a spectral sparsifier of a
+	  graph, with \(O(n \log n)\) edges in a semi-streaming setting: We
+	  present a simple algorithm that, for a graph G on n
+	  vertices and m edges, computes a spectral sparsifier of G
+	  with \(O(n \log n)\) edges in a single pass over G, using only
+	  \(O(n \log n)\) space, and \(O(m \log^2 n)\) total time. This improves
+	  on previous best constructions in the semi-streaming set-
+	  ting for both spectral and cut sparsifiers by a factor of
+	  log n in both space and runtime. The
+	  algorithm also extends to semi-streaming row sampling for
+	  general PSD matrices. As another example, we use this
+	  framework to combining an algorithm due to Koutis with
+	  improved spanner constructions to give a parallel
+	  algorithm for construction \(O(n \log^2 n \log \log n)\) sized
+	  spectral sparsifiers in \(O(m \log^2 n \log \log n)\) time. This is
+	  the best combinatorial graph sparsification algorithm to
+	  date, and the size of the sparsifiers produced is only a
+	  factor \(\log n \log \log n\) more than numerical ones.
+
+	  </p>
+	</div> </div><!--article ends-->
+	
+
 	<div class="article">
 	<div class="title">
 		  The mixing time of the Dikin walk in a polytope—A simple proof</div>
@@ -140,7 +206,10 @@
     <div class="title">Approximate Gaussian Elimination for Laplacians:<br/>Fast, Sparse, and Simple</div>
 	
       <div class="conf">
+	<a href="http://dimacs.rutgers.edu/FOCS16/Program/schedule.html"
+	target="_blank">
 	FOCS 2016
+	</a>
 	</div>
 
 	<div class="author_list">
@@ -155,9 +224,17 @@
 	    <a href="javascript:toggle('abstract20')">Abstract</a>
 	</div>
 	<div class="link">
+	  <a href="http://ieee-focs.org/FOCS-2016-Papers/3933a573.pdf"
+	  target="_blank">Conference</a>
+	  </div>
+	<div class="link">
 	  <a href="https://arxiv.org/abs/1605.02353"
 	  target="_blank">arXiv</a>
 	  </div>
+	<div class="link">
+	  <a href="https://youtu.be/oC9KQri0VPk"
+	  target="_blank">Video</a>
+	</div>
 	</div>
 	
 	<div id="abstract20" class="abstract">
