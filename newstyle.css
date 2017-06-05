@@ -117,7 +117,7 @@ body{
     width:100%;
     clear:both;
     height:800;
-    font-size:1em;
+    font-size:1.0em;
 }
 
 
@@ -146,14 +146,14 @@ body{
 #affiliation{
     float:left;
     clear:right;
-    margin-left:1em;
+    margin-left:1.0em;
     margin-top:0.5em;
     line-height:1.3em;
     overflow:hidden;
 }
 
 #affiliation p{
-    margin-bottom:1em;
+    margin-bottom:1.0em;
 }
 
 #affiliation td{
@@ -202,7 +202,7 @@ body{
 .title{
     float:left;
     font-weight:600;
-    font-size:1em;
+    font-size:1.0em;
 }
 
 .conf{
@@ -214,7 +214,7 @@ body{
     margin-left:0em;
     clear:both;
     display:block;
-    font-size:1em;
+    font-size:1.0em;
 }
 
 .link_list{
@@ -233,7 +233,7 @@ body{
 .abstract{
     clear:both;
     display:none;
-    margin-left:1em;
+    margin-left:1.0em;
     margin-top:0.5em;
     margin-bottom:0.5em;
 }
