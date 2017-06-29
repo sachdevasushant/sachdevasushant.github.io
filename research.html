@@ -85,7 +85,75 @@
   <div id="pubs" class="section">
     <H3>Design of Fast Algorithms</H3>
 
+            <div class="article">
+    <div class="title">Sampling Random Spanning Trees Faster than Matrix
+	Multiplication</div>
+	
+	
+      <div class="conf">
+	<a href="http://acm-stoc.org/stoc2017/STOC2017accepted.pdf"
+	target="_blank">
+	STOC 2017
+	</a>
+	</div>
 
+	<div class="author_list">
+	with
+	<span class="authors">
+	  David Durfee, Rasmus Kyng, John Peebles, Anup B. Rao
+	  </span>
+	</div>
+
+	<div class="link_list">
+	<div class="link">
+	    <a href="javascript:toggle('abstract22')">Abstract</a>
+	</div>
+	<div class="link">
+	  <a
+	  href="http://dl.acm.org/citation.cfm?id=3055499"
+	  target="_blank">Conference</a>
+	</div>
+	<div class="link">
+	  <a
+	  href="https://arxiv.org/abs/1611.07451"
+	  target="_blank">arXiv</a>
+	</div>
+	</div>
+	
+	<div id="abstract22" class="abstract"> <p> We present an
+	    algorithm that, with high probability, generates a random
+	    spanning tree from an edge-weighted undirected graph in
+	    \(\tilde{O}(n^{\frac{4}{3}} m^{\frac{1}{2}} +
+	    n^2)\) time (The \(\tilde{O}\) notation hides polylog(n)
+	    factors). The tree is sampled from a distribution where
+	    the probability of each tree is proportional to the
+	    product of its edge weights. This improves upon the
+	    previous best algorithm due to Colbourn et al. that runs
+	    in matrix multiplication time, \(O(n^\omega)\). For the
+	    special case of unweighted graphs, this improves upon the
+	    best previously known running time of
+	    \(\tilde{O}(\min\{n^\omega, m\sqrt{n},
+	    m^{\frac{4}{3}}\})\) for \(m \gg n^{\frac{5}{3}}\)
+	    (Colbourn et al. '96, Kelner-Madry '09, Madry et al. '15).</p>
+	    
+	    <p>The effective resistance metric is essential to our
+algorithm, as in the work of Madry et al., but we eschew
+determinant-based and random walk-based techniques used by previous
+algorithms. Instead, our algorithm is based on Gaussian elimination,
+and the fact that effective resistance is preserved in the graph
+resulting from eliminating a subset of vertices (called a Schur
+complement). As part of our algorithm, we show how to compute
+ϵ-approximate effective resistances for a set S of vertex pairs via
+approximate Schur complements in \(\tilde{O}(m +
+(n+|S|)\epsilon^{-2})\) time, without using the Johnson-Lindenstrauss
+lemma which requires \(\tilde{O} \min\{(m+|S|)\epsilon^{-2}, m +n
+\epsilon^{-4} + |S| \epsilon^{-2}\} \)  time. We combine this approximation
+procedure with an error correction procedure for handing edges where
+our estimate isn't sufficiently accurate.
+	  </p>
+	</div> </div><!--article ends-->
+
+    
               <div class="article">
     <div class="title">A Framework for Analyzing Resparsification Algorithms</div>
 	
