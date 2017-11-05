@@ -202,7 +202,6 @@ body{
 
 .title{
     float:left;
-    font-weight:600;
     font-size:1.0em;
 }
 
@@ -215,7 +214,8 @@ body{
     margin-left:0em;
     clear:both;
     display:block;
-    font-size:1.0em;
+    font-weight:200;
+    font-size:0.9em;
 }
 
 .link_list{
