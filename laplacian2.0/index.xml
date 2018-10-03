@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Laplacian Paradigm 2.0</title>
+    <link>https://sachdevasushant.github.io/laplacian2.0/</link>
+    <description>Recent content on Laplacian Paradigm 2.0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Oct 2018 22:52:20 -0400</lastBuildDate>
+    
+	<atom:link href="https://sachdevasushant.github.io/laplacian2.0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Algorithmic proofs via Gaussian elimination</title>
+      <link>https://sachdevasushant.github.io/laplacian2.0/aaron_uc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sachdevasushant.github.io/laplacian2.0/aaron_uc/</guid>
+      <description>TBD</description>
+    </item>
+    
+    <item>
+      <title>Analysing approximate Gaussian elimination using matrix martingales</title>
+      <link>https://sachdevasushant.github.io/laplacian2.0/rasmus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sachdevasushant.github.io/laplacian2.0/rasmus/</guid>
+      <description>The sum of a sequence of random variables is a martingale, if each variable has zero mean, conditioned on all the preceding variables. Concentration results for matrix-valued martingales have become an important tool in the analysis of algorithms in randomized numerical linear algebra. Simple and fast algorithms for many well-studied problems can be analyzed in using martingales. We will explore recent results on using matrix martingales for analyzing approximate Gaussian elimination on Laplacian matrices associated with undirected and directed graphs, and survey briefly other uses of matrix martingales in spectral graph theory.</description>
+    </item>
+    
+    <item>
+      <title>Approximate Gaussian elimination and applications</title>
+      <link>https://sachdevasushant.github.io/laplacian2.0/sushant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sachdevasushant.github.io/laplacian2.0/sushant/</guid>
+      <description>Gaussian elimination is the best known algorithm for solving systems of linear equations, and one of the oldest algorithms known. However, it is ill-suited for solving sparse systems since even for sparse Laplacian matrices, it can require running time that is super-quadratic in the input size. Several previous approaches speed up Gaussian elimination by introducing error, but fail to provide guarantees. Over the last few years, new versions of approximate Gaussian elimination have been developed for graph Laplacians that provide provable approximation guarantees, and run in time nearly-linear in the sparsity of the graph. In this talk, we will discuss these approaches, and how they lead to 1) simpler nearly-linear time Laplacian solvers, 2) nearly-linear time solvers for systems strictly more general than Laplacians, and 3) faster estimation of all pair effective resistances (which implies faster algorithms for estimating the determinant of a Laplacian).</description>
+    </item>
+    
+    <item>
+      <title>Intro to Laplacian paradigm 2.0</title>
+      <link>https://sachdevasushant.github.io/laplacian2.0/richard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sachdevasushant.github.io/laplacian2.0/richard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear Algebraic Primitives Beyond Laplacian Solvers</title>
+      <link>https://sachdevasushant.github.io/laplacian2.0/aaron/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sachdevasushant.github.io/laplacian2.0/aaron/</guid>
+      <description>Over the past decade nearly linear time Laplacian system solving has emerged as powerful algorithmic hammer in improving asymptotic running times of solving a wide variety of problems. Both the black-box application of Laplacian system solvers and the application of the algorithmic techniques underlying recent efficient Laplacian system solving algorithms have had broad implications in algorithm design. In this talk I will discuss recent progress in advancing this machinery beyond solving Laplacians systems towards solving broader classes of structured linear systems in nearly linear time. This talk will focus on recent advances in solving directed Laplacians (and more broadly M-matrices) in nearly linear time through efficient reductions to solving row-column diagonally dominant (RCDD) systems. Further, this talk will connect these problems to a variety of closely related linear algebraic problems including PageRank computation, policy evaluation, stationary distribution computation, Perron-Vectors computation, and more.</description>
+    </item>
+    
+    <item>
+      <title>Lunch</title>
+      <link>https://sachdevasushant.github.io/laplacian2.0/lunchbreak/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sachdevasushant.github.io/laplacian2.0/lunchbreak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Morning Break</title>
+      <link>https://sachdevasushant.github.io/laplacian2.0/morningbreak/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sachdevasushant.github.io/laplacian2.0/morningbreak/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
