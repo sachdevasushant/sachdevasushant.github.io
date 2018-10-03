@@ -12,21 +12,21 @@
     
     
     <item>
-      <title>Algorithmic proofs via Gaussian elimination</title>
-      <link>https://sachdevasushant.github.io/laplacian2.0/aaron_uc/</link>
+      <title>Laplacian Paradigm 2.0: Merging Continuous and Discrete</title>
+      <link>https://sachdevasushant.github.io/laplacian2.0/richard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sachdevasushant.github.io/laplacian2.0/aaron_uc/</guid>
-      <description>TBD</description>
+      <guid>https://sachdevasushant.github.io/laplacian2.0/richard/</guid>
+      <description>Over the past three decades, works related to efficient solvers for a class of graph structured matrices, graph Laplacians, led to fundamental results in combinatorial optimization and scientific computing as well as the Laplacian paradigm for graph algorithms. In this talk I’ll survey these progresses, with focus on the underlying algorithm design approaches. Specifically, I will discuss the origin of the Laplacian paradigm in combining combinatorial and numerical building blocks via spectral graph theory, and describe recent efforts on designing new tools tailored towards the overall algorithmic questions.</description>
     </item>
     
     <item>
-      <title>Analysing approximate Gaussian elimination using matrix martingales</title>
-      <link>https://sachdevasushant.github.io/laplacian2.0/rasmus/</link>
+      <title>Linear Algebraic Primitives Beyond Laplacian Solvers</title>
+      <link>https://sachdevasushant.github.io/laplacian2.0/aaron/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sachdevasushant.github.io/laplacian2.0/rasmus/</guid>
-      <description>The sum of a sequence of random variables is a martingale, if each variable has zero mean, conditioned on all the preceding variables. Concentration results for matrix-valued martingales have become an important tool in the analysis of algorithms in randomized numerical linear algebra. Simple and fast algorithms for many well-studied problems can be analyzed in using martingales. We will explore recent results on using matrix martingales for analyzing approximate Gaussian elimination on Laplacian matrices associated with undirected and directed graphs, and survey briefly other uses of matrix martingales in spectral graph theory.</description>
+      <guid>https://sachdevasushant.github.io/laplacian2.0/aaron/</guid>
+      <description>Over the past decade nearly linear time Laplacian system solving has emerged as powerful algorithmic hammer in improving asymptotic running times of solving a wide variety of problems. Both the black-box application of Laplacian system solvers and the application of the algorithmic techniques underlying recent efficient Laplacian system solving algorithms have had broad implications in algorithm design. In this talk I will discuss recent progress in advancing this machinery beyond solving Laplacians systems towards solving broader classes of structured linear systems in nearly linear time. This talk will focus on recent advances in solving directed Laplacians (and more broadly M-matrices) in nearly linear time through efficient reductions to solving row-column diagonally dominant (RCDD) systems. Further, this talk will connect these problems to a variety of closely related linear algebraic problems including PageRank computation, policy evaluation, stationary distribution computation, Perron-Vectors computation, and more.</description>
     </item>
     
     <item>
@@ -39,21 +39,21 @@
     </item>
     
     <item>
-      <title>Intro to Laplacian paradigm 2.0</title>
-      <link>https://sachdevasushant.github.io/laplacian2.0/richard/</link>
+      <title>Analysing approximate Gaussian elimination using matrix martingales</title>
+      <link>https://sachdevasushant.github.io/laplacian2.0/rasmus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sachdevasushant.github.io/laplacian2.0/richard/</guid>
-      <description></description>
+      <guid>https://sachdevasushant.github.io/laplacian2.0/rasmus/</guid>
+      <description>The sum of a sequence of random variables is a martingale, if each variable has zero mean, conditioned on all the preceding variables. Concentration results for matrix-valued martingales have become an important tool in the analysis of algorithms in randomized numerical linear algebra. Simple and fast algorithms for many well-studied problems can be analyzed in using martingales. We will explore recent results on using matrix martingales for analyzing approximate Gaussian elimination on Laplacian matrices associated with undirected and directed graphs, and survey briefly other uses of matrix martingales in spectral graph theory.</description>
     </item>
     
     <item>
-      <title>Linear Algebraic Primitives Beyond Laplacian Solvers</title>
-      <link>https://sachdevasushant.github.io/laplacian2.0/aaron/</link>
+      <title>Algorithmic proofs via Gaussian elimination</title>
+      <link>https://sachdevasushant.github.io/laplacian2.0/aaron_uc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sachdevasushant.github.io/laplacian2.0/aaron/</guid>
-      <description>Over the past decade nearly linear time Laplacian system solving has emerged as powerful algorithmic hammer in improving asymptotic running times of solving a wide variety of problems. Both the black-box application of Laplacian system solvers and the application of the algorithmic techniques underlying recent efficient Laplacian system solving algorithms have had broad implications in algorithm design. In this talk I will discuss recent progress in advancing this machinery beyond solving Laplacians systems towards solving broader classes of structured linear systems in nearly linear time. This talk will focus on recent advances in solving directed Laplacians (and more broadly M-matrices) in nearly linear time through efficient reductions to solving row-column diagonally dominant (RCDD) systems. Further, this talk will connect these problems to a variety of closely related linear algebraic problems including PageRank computation, policy evaluation, stationary distribution computation, Perron-Vectors computation, and more.</description>
+      <guid>https://sachdevasushant.github.io/laplacian2.0/aaron_uc/</guid>
+      <description>TBD</description>
     </item>
     
     <item>
