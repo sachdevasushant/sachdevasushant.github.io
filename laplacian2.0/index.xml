@@ -48,12 +48,12 @@
     </item>
     
     <item>
-      <title>Algorithmic proofs via Gaussian elimination</title>
+      <title>Graph Structure via Exact Gaussian Elimination</title>
       <link>https://sachdevasushant.github.io/laplacian2.0/aaron_uc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sachdevasushant.github.io/laplacian2.0/aaron_uc/</guid>
-      <description>TBD</description>
+      <description>Graph partitioning has played an important role in theoretical computer science, particularly in the design of approximation algorithms and metric embeddings. In this talk, we revisit some of these applications from the perspective of Gaussian elimination, particularly in the context of random spanning tree generation and oblivious routing. In the process, we will see how fundamental tradeoffs in graph partitioning can be overcome by eliminating vertices from an undirected graph using Gaussian elimination on the associated Laplacian matrix.</description>
     </item>
     
     <item>
