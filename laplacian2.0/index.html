@@ -87,21 +87,30 @@ complements, and graph (re)sparsification.</p>
     <a href="https://sachdevasushant.github.io/laplacian2.0/richard/">Laplacian Paradigm 2.0: Merging Continuous and Discrete</a>
   </h3>
   <h4 style="color:#996600;"><a href="https://www.cc.gatech.edu/~rpeng/" target="_blank">Richard Peng (GaTech)</a> 08:40 -- 09:10</h4>
-   <tag style="font-weight: bold;"> Abstract: </tag>  Over the past three decades, works related to efficient solvers for a class of graph structured matrices, graph Laplacians, led to fundamental results in combinatorial optimization and scientific computing as well as the Laplacian paradigm for graph algorithms. In this talk I’ll survey these progresses, with focus on the underlying algorithm design approaches. Specifically, I will discuss the origin of the Laplacian paradigm in combining combinatorial and numerical building blocks via spectral graph theory, and describe recent efforts on designing new tools tailored towards the overall algorithmic questions.
+   <a href="https://sachdevasushant.github.io/laplacian2.0/peng.pdf" target="_blank">pdf</a>  
+   <br/>
+   <tag style="font-weight: bold;"> Abstract: </tag>  
+  Over the past three decades, works related to efficient solvers for a class of graph structured matrices, graph Laplacians, led to fundamental results in combinatorial optimization and scientific computing as well as the Laplacian paradigm for graph algorithms. In this talk I’ll survey these progresses, with focus on the underlying algorithm design approaches. Specifically, I will discuss the origin of the Laplacian paradigm in combining combinatorial and numerical building blocks via spectral graph theory, and describe recent efforts on designing new tools tailored towards the overall algorithmic questions.
   
 </article><article class="post">
   <h3 class="post-title">
     <a href="https://sachdevasushant.github.io/laplacian2.0/aaron/">Linear Algebraic Primitives Beyond Laplacian Solvers</a>
   </h3>
   <h4 style="color:#996600;"><a href="http://www.aaronsidford.com/" target="_blank">Aaron Sidford (Stanford)</a> 09:10 -- 09:50</h4>
-   <tag style="font-weight: bold;"> Abstract: </tag>  Over the past decade nearly linear time Laplacian system solving has emerged as powerful algorithmic hammer in improving asymptotic running times of solving a wide variety of problems. Both the black-box application of Laplacian system solvers and the application of the algorithmic techniques underlying recent efficient Laplacian system solving algorithms have had broad implications in algorithm design. In this talk I will discuss recent progress in advancing this machinery beyond solving Laplacians systems towards solving broader classes of structured linear systems in nearly linear time. This talk will focus on recent advances in solving directed Laplacians (and more broadly M-matrices) in nearly linear time through efficient reductions to solving row-column diagonally dominant (RCDD) systems. Further, this talk will connect these problems to a variety of closely related linear algebraic problems including PageRank computation, policy evaluation, stationary distribution computation, Perron-Vectors computation, and more.
+   
+   <br/>
+   <tag style="font-weight: bold;"> Abstract: </tag>  
+  Over the past decade nearly linear time Laplacian system solving has emerged as powerful algorithmic hammer in improving asymptotic running times of solving a wide variety of problems. Both the black-box application of Laplacian system solvers and the application of the algorithmic techniques underlying recent efficient Laplacian system solving algorithms have had broad implications in algorithm design. In this talk I will discuss recent progress in advancing this machinery beyond solving Laplacians systems towards solving broader classes of structured linear systems in nearly linear time. This talk will focus on recent advances in solving directed Laplacians (and more broadly M-matrices) in nearly linear time through efficient reductions to solving row-column diagonally dominant (RCDD) systems. Further, this talk will connect these problems to a variety of closely related linear algebraic problems including PageRank computation, policy evaluation, stationary distribution computation, Perron-Vectors computation, and more.
   
 </article><article class="post">
   <h3 class="post-title">
     <a href="https://sachdevasushant.github.io/laplacian2.0/sushant/">Approximate Gaussian elimination and applications</a>
   </h3>
   <h4 style="color:#996600;"><a href="https://sachdevasushant.github.io/" target="_blank">Sushant Sachdeva (UToronto)</a> 09:50 -- 10:30</h4>
-   <tag style="font-weight: bold;"> Abstract: </tag>  Gaussian elimination is the best known algorithm for solving systems of linear equations, and one of the oldest algorithms known. However, it is ill-suited for solving sparse systems since even for sparse Laplacian matrices, it can require running time that is super-quadratic in the input size. Several previous approaches speed up Gaussian elimination by introducing error, but fail to provide guarantees. Over the last few years, new versions of approximate Gaussian elimination have been developed for graph Laplacians that provide provable approximation guarantees, and run in time nearly-linear in the sparsity of the graph. In this talk, we will discuss these approaches, and how they lead to 1) simpler nearly-linear time Laplacian solvers, 2) nearly-linear time solvers for systems strictly more general than Laplacians, and 3) faster estimation of all pair effective resistances (which implies faster algorithms for estimating the determinant of a Laplacian).
+   <a href="https://sachdevasushant.github.io/laplacian2.0/sachdeva.pdf" target="_blank">pdf</a>  
+   <br/>
+   <tag style="font-weight: bold;"> Abstract: </tag>  
+  Gaussian elimination is the best known algorithm for solving systems of linear equations, and one of the oldest algorithms known. However, it is ill-suited for solving sparse systems since even for sparse Laplacian matrices, it can require running time that is super-quadratic in the input size. Several previous approaches speed up Gaussian elimination by introducing error, but fail to provide guarantees. Over the last few years, new versions of approximate Gaussian elimination have been developed for graph Laplacians that provide provable approximation guarantees, and run in time nearly-linear in the sparsity of the graph. In this talk, we will discuss these approaches, and how they lead to 1) simpler nearly-linear time Laplacian solvers, 2) nearly-linear time solvers for systems strictly more general than Laplacians, and 3) faster estimation of all pair effective resistances (which implies faster algorithms for estimating the determinant of a Laplacian).
   
 </article><article class="post">
   <h3 class="post-title">
@@ -109,13 +118,19 @@ complements, and graph (re)sparsification.</p>
   </h3>
   <h4 style="color:#996600;"><a href="" target="_blank"></a> 10:30 -- 11:00</h4>
    
+   <br/>
+   
+  
   
 </article><article class="post">
   <h3 class="post-title">
     <a href="https://sachdevasushant.github.io/laplacian2.0/rasmus/">Analysing approximate Gaussian elimination using matrix martingales</a>
   </h3>
   <h4 style="color:#996600;"><a href="http://rasmuskyng.com/" target="_blank">Rasmus Kyng (Harvard)</a> 11:00 -- 12:00</h4>
-   <tag style="font-weight: bold;"> Abstract: </tag>  The sum of a sequence of random variables is a martingale, if each variable has zero mean, conditioned on all the preceding variables. Concentration results for matrix-valued martingales have become an important tool in the analysis of algorithms in randomized numerical linear algebra. Simple and fast algorithms for many well-studied problems can be analyzed in using martingales. We will explore recent results on using matrix martingales for analyzing approximate Gaussian elimination on Laplacian matrices associated with undirected and directed graphs, and survey briefly other uses of matrix martingales in spectral graph theory.
+   <a href="https://sachdevasushant.github.io/laplacian2.0/kyng.pdf" target="_blank">pdf</a>  
+   | <a href="https://sachdevasushant.github.io/laplacian2.0/kyng.pptx" target="_blank">ppt</a>  <br/>
+   <tag style="font-weight: bold;"> Abstract: </tag>  
+  The sum of a sequence of random variables is a martingale, if each variable has zero mean, conditioned on all the preceding variables. Concentration results for matrix-valued martingales have become an important tool in the analysis of algorithms in randomized numerical linear algebra. Simple and fast algorithms for many well-studied problems can be analyzed in using martingales. We will explore recent results on using matrix martingales for analyzing approximate Gaussian elimination on Laplacian matrices associated with undirected and directed graphs, and survey briefly other uses of matrix martingales in spectral graph theory.
   
 </article><article class="post">
   <h3 class="post-title">
@@ -123,13 +138,19 @@ complements, and graph (re)sparsification.</p>
   </h3>
   <h4 style="color:#996600;"><a href="" target="_blank"></a> 12:00 -- 14:00</h4>
    
+   <br/>
+   
+  
   
 </article><article class="post">
   <h3 class="post-title">
     <a href="https://sachdevasushant.github.io/laplacian2.0/aaron_uc/">Graph Structure via Exact Gaussian Elimination</a>
   </h3>
   <h4 style="color:#996600;"><a href="https://people.eecs.berkeley.edu/~aschild/" target="_blank">Aaron Schild (UC Berkeley)</a> 14:00 -- 15:00</h4>
-   <tag style="font-weight: bold;"> Abstract: </tag>  Graph partitioning has played an important role in theoretical computer science, particularly in the design of approximation algorithms and metric embeddings. In this talk, we revisit some of these applications from the perspective of Gaussian elimination, particularly in the context of random spanning tree generation and oblivious routing. In the process, we will see how fundamental tradeoffs in graph partitioning can be overcome by eliminating vertices from an undirected graph using Gaussian elimination on the associated Laplacian matrix.
+   <a href="https://sachdevasushant.github.io/laplacian2.0/schild.pdf" target="_blank">pdf</a>  
+   <br/>
+   <tag style="font-weight: bold;"> Abstract: </tag>  
+  Graph partitioning has played an important role in theoretical computer science, particularly in the design of approximation algorithms and metric embeddings. In this talk, we revisit some of these applications from the perspective of Gaussian elimination, particularly in the context of random spanning tree generation and oblivious routing. In the process, we will see how fundamental tradeoffs in graph partitioning can be overcome by eliminating vertices from an undirected graph using Gaussian elimination on the associated Laplacian matrix.
   
 </article>
 </div>
