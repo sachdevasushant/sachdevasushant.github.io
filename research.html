@@ -89,8 +89,8 @@
 
 
 
-
-        <div class="article">
+    
+    <div class="article">
       <div class="title">
 	Fast, Provably convergent IRLS Algorithm for p-norm Linear Regression
       </div>
@@ -111,8 +111,12 @@
 	  <a href="javascript:toggle('abstract30')">Abstract</a>
 	</div>
       	<div class="link">
-      		    <a href="pubs/IRLS.pdf"
-      		       target="_blank">PDF</a>
+      		    <a href="https://arxiv.org/abs/1907.07167"
+      		       target="_blank">arXiv</a>
+      	</div>
+      	<div class="link">Code on 
+      		    <a href="https://github.com/utoronto-theory/pIRLS"
+      		       target="_blank">Github</a>
       	</div>
       </div>
       
@@ -147,63 +151,68 @@
 
 
 	
-        <div class="article">
-	  <div class="title">
-	    Flows in Almost Linear Time via Adaptive Preconditioning
-      </div>      
-
-	  <div class="conf">
-	    <a href="http://acm-stoc.org/stoc2019/STOC%202019%20accepted%20papers.html" target="_blank">
-	      STOC 2019
-	      </a>
+    <div class="article">
+      <div class="title">
+	Flows in Almost Linear Time via Adaptive Preconditioning
       </div>
 
-	<div class="author_list">
+      <div class="conf">
+	<a href="http://acm-stoc.org/stoc2019/STOC%202019%20accepted%20papers.html" target="_blank">
+	  STOC 2019
+	</a>
+      </div>
+      
+      <div class="author_list">
 	with
 	<span class="authors">
 	  Richard Peng, Rasmus Kyng, Di Wang
-	  </span>
-	</div>
+	</span>
+      </div>
 
-	<div class="link_list">
+      <div class="link_list">
 	<div class="link">
-	    <a href="javascript:toggle('abstract29')">Abstract</a>
-	</div> 
-<!--	<div class="link">
-	  <a
-	  href="https://arxiv.org/abs/1810.05143"
-	  target="_blank">arXiv</a>
-	</div> -->
-	</div> 
-	
-	<div id="abstract29" class="abstract">
-	  <p>
-	    We present algorithms for solving a large class of flow
-	    problems on unit weighted graphs to high accuracy in almost-linear
-	    time.  Our framework is inspired by the routing based solver for
-	    Laplacian linear systems by Spielman and Teng (STOC '04, SIMAX '14),
-	    and has a similar overall recursive structure.  Our adaptation of it
-	    to flow problems requires several new components including adaptive
-	    non-linear preconditioning, tree routings that give approximations
-	    in two norms simultaneously, and gradient-preserving sparsification
-	    for wide class of objective functions that interpolate between
-	    \(\ell_2\) and \(\ell_{\infty}\) norms.</p>
-	  
-	  <p> Using this framework, we obtain algorithms for computing
-	    \(1 + 1/\textrm{poly}(n)\)-approximate p-norm minimizing
-	    flows on unit weighted graphs in about \(2^{p^{3/2}}
-	    m^{1+1/{\sqrt{p}}}\) time when \(p > 2\).  For \(p =
-	    \sqrt{\log n} \) this is an almost linear time algorithm.
-	    Using this algorithm as an oracle inside multiplicative
-	    weights update gives: (1) a new approach for computing
-	    approximate maximum flows on undirected graphs that does
-	    not use oblivious routings; (2) the first almost-linear
-	    time high-accuracy algorithms for $p$-norm semi-supervised
-	    learning on graphs when \(p < 2\); and (3) the first
-	    almost-linear time algorithm for approximate total
-	    variation minimization.
-	  </p>
+	  <a href="javascript:toggle('abstract29')">Abstract</a>
 	</div>
+	<div class="link">
+	  <a href="https://dl.acm.org/citation.cfm?id=3316410"
+	     target="_blank">
+	    Conference</a>
+	  </div>
+	<div class="link">
+		    <a href="https://arxiv.org/abs/1906.10340"
+		       target="_blank">arXiv</a>
+	</div>
+      </div>
+      
+      <div id="abstract29" class="abstract">
+	<p>
+	  We present algorithms for solving a large class of flow
+	  problems on unit weighted graphs to high accuracy in
+	  almost-linear time.  Our framework is inspired by the
+	  routing based solver for Laplacian linear systems by
+	  Spielman and Teng (STOC '04, SIMAX '14), and has a similar
+	  overall recursive structure.  Our adaptation of it to flow
+	  problems requires several new components including adaptive
+	  non-linear preconditioning, tree routings that give
+	  approximations in two norms simultaneously, and
+	  gradient-preserving sparsification for wide class of
+	  objective functions that interpolate between \(\ell_2\) and
+	  \(\ell_{\infty}\) norms.</p>
+	  
+	<p> Using this framework, we obtain algorithms for computing
+	  \(1 + 1/\textrm{poly}(n)\)-approximate p-norm minimizing
+	  flows on unit weighted graphs in about \(2^{p^{3/2}}
+	  m^{1+1/{\sqrt{p}}}\) time when \(p > 2\).  For \(p =
+	  \sqrt{\log n} \) this is an almost linear time algorithm.
+	  Using this algorithm as an oracle inside multiplicative
+	  weights update gives: (1) a new approach for computing
+	  approximate maximum flows on undirected graphs that does not
+	  use oblivious routings; (2) the first almost-linear time
+	  high-accuracy algorithms for $p$-norm semi-supervised
+	  learning on graphs when \(p < 2\); and (3) the first
+	  almost-linear time algorithm for approximate total variation
+	  minimization.  </p>
+					</div>
     </div><!--article ends-->
 
 	
@@ -975,12 +984,18 @@ As an application, we show how to maintain a spectral sparsifier of a
 
 
 
-    <div class="article">
-      <div class="title">
-	Multi-component Graph based Semi-Supervised Learning
+
+
+    
+        <div class="article">
+	  <div class="title">
+	    Multi-component Graph based Semi-Supervised Learning
       </div>      
 
-      <div class="conf">AISTATS 2019
+	  <div class="conf">
+	    <a href="http://proceedings.mlr.press/v89/" target="_blank">
+	      AISTATS 2019
+	      </a>
       </div>
 
 	<div class="author_list">
@@ -993,20 +1008,38 @@ As an application, we show how to maintain a spectral sparsifier of a
 	<div class="link_list">
 	<div class="link">
 	    <a href="javascript:toggle('abstract28')">Abstract</a>
-	</div> 
-<!--	<div class="link">
-	  <a
-	  href="https://arxiv.org/abs/1810.05143"
-	  target="_blank">arXiv</a>
-	</div> -->
+	</div>
+	<div class="link">
+	  <a href="http://proceedings.mlr.press/v89/viswanathan19a.html"
+	  target="_blank">Conference</a>
+	</div>
 	</div> 
 	
 	<div id="abstract28" class="abstract">
 	  <p>
-	  </p>
-We present a new approach for graph based semi-supervised learning based on a multi- component extension to the Gaussian MRF model. This approach models the observa- tions on the vertices as a Gaussian ensemble with an inverse covariance matrix that is a weighted linear combination of multiple ma- trices. Building on randomized matrix trace estimation and fast Laplacian solvers, we de- velop fast and efficient algorithms for comput- ing the best-fit (maximum likelihood) model and the predicted labels using gradient de- scent. Our model is considerably simpler, with just tens of parameters, and a single hyperparameter, in contrast with state-of-the- art approaches using deep learning techniques. Our experiments on benchmark citation net- works show that the best-fit model estimated by our algorithm leads to significant improve- ments on all datasets compared to baseline models. Further, our performance compares favorably with several state-of-the-art meth- ods on these datasets, and is comparable with the best performances.
+	    We present a new approach for graph based semi-supervised
+	    learning based on a multi- component extension to the
+	    Gaussian MRF model. This approach models the observa-
+	    tions on the vertices as a Gaussian ensemble with an
+	    inverse covariance matrix that is a weighted linear
+	    combination of multiple matrices. Building on randomized
+	    matrix trace estimation and fast Laplacian solvers, we de-
+	    velop fast and efficient algorithms for comput- ing the
+	    best-fit (maximum likelihood) model and the predicted
+	    labels using gradient de- scent. Our model is considerably
+	    simpler, with just tens of parameters, and a single
+	    hyperparameter, in contrast with state-of-the- art
+	    approaches using deep learning techniques. Our experiments
+	    on benchmark citation net- works show that the best-fit
+	    model estimated by our algorithm leads to significant
+	    improve- ments on all datasets compared to baseline
+	    models. Further, our performance compares favorably with
+	    several state-of-the-art methods on these datasets, and
+	    is comparable with the best performances.
+	    </p>
 	</div>
     </div><!--article ends-->
+
 
 
 
