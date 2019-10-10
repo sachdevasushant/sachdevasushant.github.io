@@ -89,62 +89,79 @@
 
 
 
+
     
     <div class="article">
       <div class="title">
-	Fast, Provably convergent IRLS Algorithm for p-norm Linear Regression
+	Faster p-norm minimizing flows, via smoothed q-norm problems
       </div>
 
       <div class="conf">
-	Manuscript
+	<a href="https://www.siam.org/conferences/cm/program/accepted-papers/soda20-accepted-papers"
+	target="_blank">SODA 2020</a>
       </div>
       
       <div class="author_list">
 	with
 	<span class="authors">
-	  Deeksha Adil, Richard Peng
+	  Deeksha Adil
 	</span>
       </div>
 
       <div class="link_list">
 	<div class="link">
-	  <a href="javascript:toggle('abstract30')">Abstract</a>
+	  <a href="javascript:toggle('abstract32')">Abstract</a>
 	</div>
-      	<div class="link">
+<!--      	<div class="link">
       		    <a href="https://arxiv.org/abs/1907.07167"
       		       target="_blank">arXiv</a>
       	</div>
       	<div class="link">Code on 
       		    <a href="https://github.com/utoronto-theory/pIRLS"
       		       target="_blank">Github</a>
-      	</div>
+      	</div>-->
       </div>
       
-      <div id="abstract30" class="abstract">
+      <div id="abstract32" class="abstract">
 	<p>
-	  Linear regression in \(\ell_p\)-norm is a canonical
-	  optimization problem that arises in several applications,
-	  including sparse recovery, semi-supervised learning, and
-	  sig- nal processing. Generic convex optimization algorithms
-	  for solving lp-regression are slow in practice. Iteratively
-	  Reweighted Least Squares (IRLS) is an easy to implement
-	  family of algorithms for solving these problems that has
-	  been studied for over 50 years. However, these algorithms
-	  often diverge for p > 3, and since the work of Osborne
-	  (1985), it has been an open problem whether there is an IRLS
-	  algorithm that is guaranteed to converge rapidly for p >
-	  3. We propose p-IRLS, the first IRLS algorithm that provably
-	  converges geometrically for any \(p \in [2,\infty)\). Our
-	  algorithm is simple to implement and is guaranteed to find a
-	  high accuracy solution in a sub-linear number of
-	  iterations. Our experiments demonstrate that it performs
-	  even better than our theoretical bounds, beats the standard
-	  Matlab/CVX implementation for solving these problems by
-	  10–50x, and is the fastest among available implementations
-	  in the high-accuracy regime.
-	  </p>
+	    We present faster high-accuracy algorithms for computing
+  \(\ell_p\)-norm minimizing flows.  On a graph with \(m\) edges, our
+  algorithm can compute a \((1+1/\text{poly}(m))\)-approximate
+  unweighted \(\ell_p\)-norm minimizing flow with
+  \(pm^{1 + \frac{1}{p-1} + o(1)}\) operations, for any \(p \ge 2\),
+  giving the best bound for \(p \gtrsim 5.24\). Combined with the
+  algorithm from (Adil et al., SODA '19), we can now compute such
+  flows for any \(2 \le p \le \poly(\log m)\) in time at most
+  \(O(m^{1.24})\). In comparison, the previous best running time for
+  computing unweighted \(\ell_p\)-norm minimizing flows was
+  \(\Omega(m^{1.33})\) for large constant \(p\). For
+  \(p \sim \delta^{-1}\log m,\) our algorithm computes a
+  \((1+\delta)\)-approximate maximum flow on undirected graphs using
+  \(m^{1+o(1)}\delta^{-1}\) operations, matching the current best bound,
+  albeit only for unit-capacity graphs.
+
+  We also give an algorithm for solving general \(\ell_{p}\)-norm
+  regression problems for large \(p\). Our algorithm makes
+  \(p m^{\frac{1}{3} + o(1)} \log^{2} (1/\varepsilon)\) calls to a linear
+  solver. This gives the first high-accuracy algorithm for computing
+  weighted \(\ell_{p}\)-norm minimizing flows that runs in time
+  \(o(m^{1.5})\) for \(p = n^{\Omega(1)}\).
+
+  Our main technical tool is smoothed \(\ell_p\)-norm problems
+  introduced by Adil et al. (SODA '19), and our key technical
+  contribution is to show that these problems are interreducible for
+  different values of \(p\). We show that \(\ell_p\)-norm problems can be
+  solved to high-accuracy by making
+  \(p m^{\max\{\frac{1}{p-1}, \frac{1}{q}\}} \log^{2} \frac{m}{\varepsilon}\)
+	    calls to an algorithm for solving smoothed \(\ell_q\)-norm problems.
+	</p>
       </div>
     </div><!--article ends-->
+
+
+
+
+
 
 
 
@@ -983,6 +1000,125 @@ As an application, we show how to maintain a spectral sparsifier of a
     <H3>Algorithmic Questions in Learning and Statistics</H3>
 
 
+
+
+
+
+    
+    
+    <div class="article">
+      <div class="title">
+	Fast, Provably convergent IRLS Algorithm for p-norm Linear Regression
+      </div>
+
+      <div class="conf">
+	<a href="https://neurips.cc/Conferences/2019/AcceptedPapersInitial"
+	target="_blank">Neurips 2019</a>
+      </div>
+      
+      <div class="author_list">
+	with
+	<span class="authors">
+	  Deeksha Adil, Richard Peng
+	</span>
+      </div>
+
+      <div class="link_list">
+	<div class="link">
+	  <a href="javascript:toggle('abstract31')">Abstract</a>
+	</div>
+      	<div class="link">
+      		    <a href="https://arxiv.org/abs/1907.07167"
+      		       target="_blank">arXiv</a>
+      	</div>
+      	<div class="link">Code on 
+      		    <a href="https://github.com/utoronto-theory/pIRLS"
+      		       target="_blank">Github</a>
+      	</div>
+      </div>
+      
+      <div id="abstract31" class="abstract">
+	<p>
+	  Linear regression in \(\ell_p\)-norm is a canonical
+	  optimization problem that arises in several applications,
+	  including sparse recovery, semi-supervised learning, and
+	  sig- nal processing. Generic convex optimization algorithms
+	  for solving lp-regression are slow in practice. Iteratively
+	  Reweighted Least Squares (IRLS) is an easy to implement
+	  family of algorithms for solving these problems that has
+	  been studied for over 50 years. However, these algorithms
+	  often diverge for p > 3, and since the work of Osborne
+	  (1985), it has been an open problem whether there is an IRLS
+	  algorithm that is guaranteed to converge rapidly for p >
+	  3. We propose p-IRLS, the first IRLS algorithm that provably
+	  converges geometrically for any \(p \in [2,\infty)\). Our
+	  algorithm is simple to implement and is guaranteed to find a
+	  high accuracy solution in a sub-linear number of
+	  iterations. Our experiments demonstrate that it performs
+	  even better than our theoretical bounds, beats the standard
+	  Matlab/CVX implementation for solving these problems by
+	  10–50x, and is the fastest among available implementations
+	  in the high-accuracy regime.
+	  </p>
+      </div>
+    </div><!--article ends-->
+
+
+
+    
+    <div class="article">
+      <div class="title">
+	Which Algorithmic Choices Matter at Which Batch Sizes? <br/> Insights From a Noisy Quadratic Model
+      </div>
+      <div class="conf">
+	<a href="https://neurips.cc/Conferences/2019/AcceptedPapersInitial"
+	target="_blank">Neurips 2019</a>
+      </div>
+      
+      <div class="author_list">
+	<span class="authors">
+	  Guodong Zhang, Lala Li, Zachary Nado, James Martens, Sushant Sachdeva, George E. Dahl, Christopher J. Shallue, Roger Grosse
+	</span>
+      </div>
+
+      <div class="link_list">
+	<div class="link">
+	  <a href="javascript:toggle('abstract30')">Abstract</a>
+	</div>
+      	<div class="link">
+      		    <a href="https://arxiv.org/abs/1907.04164"
+      		       target="_blank">arXiv</a>
+      	</div>
+<!--      	<div class="link">Code on 
+      		    <a href="https://github.com/utoronto-theory/pIRLS"
+      		       target="_blank">Github</a>
+      	</div>-->
+      </div>
+      
+      <div id="abstract30" class="abstract">
+	<p>
+	  Increasing the batch size is a popular way to speed up
+	  neural network training, but beyond some critical batch
+	  size, larger batch sizes yield diminishing returns. In this
+	  work, we study how the critical batch size changes based on
+	  properties of the optimization algorithm, including
+	  acceleration and preconditioning, through two different
+	  lenses: large scale experiments, and analysis of a simple
+	  noisy quadratic model (NQM). We experimentally demonstrate
+	  that optimization algorithms that employ preconditioning,
+	  specifically Adam and K-FAC, result in much larger critical
+	  batch sizes than stochastic gradient descent with
+	  momentum. We also demonstrate that the NQM captures many of
+	  the essential features of real neural network training,
+	  despite being drastically simpler to work with. The NQM
+	  predicts our results with preconditioned optimizers,
+	  previous results with accelerated gradient descent, and
+	  other results around optimal learning rates and large batch
+	  training, making it a useful tool to generate testable
+	  predictions about neural network optimization.
+	  </p>
+      </div>
+    </div><!--article ends-->
 
 
 
