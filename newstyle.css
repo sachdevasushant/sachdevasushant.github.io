@@ -173,6 +173,21 @@ body{
     font-weight:500;
 }
 
+
+#current_affiliation table{
+    float:left;
+    clear:right;
+    width:100%;
+}
+
+#current_affiliation table tbody{
+    display: table;
+    float:left;
+    clear:right;
+    width:100%;
+}
+
+
 .section{
     display:block;
     clear:both;
