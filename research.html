@@ -42,10 +42,9 @@
 <!--End Script for toggling abstracts-->
 
 <!--Script for mathjax-->
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<!--End Script for toggling abstracts-->
 
 
 
@@ -85,6 +84,149 @@
   <div id="pubs" class="section">
     <H3>Design of Fast Algorithms</H3>
 
+
+
+    <div class="article">
+      <div class="title">
+	A New Approach to Estimating Effective Resistances <br/> and
+	Counting Spanning Trees in Expander Graphs
+      </div>
+
+      <div class="conf">
+	<a href="https://www.siam.org/conferences/cm/program/accepted-papers/soda23-accepted-papers"
+	   target="_blank">
+	  SODA 2023
+	</a>
+      </div>
+      
+      <div class="author_list">
+	with
+	<span class="authors">
+	  Lawrence Li
+	</span>
+      </div>
+
+      
+      <div class="link_list">
+	<div class="link">
+	  <a href="javascript:toggle('abstract41')">Abstract</a>
+	</div>
+	<div class="link">
+	  <a href="https://epubs.siam.org/doi/10.1137/1.9781611977554.ch102"
+	     target="_blank">Conference</a> </div>
+	<div class="link">
+	  <a href="https://arxiv.org/abs/2211.01468"
+	     target="_blank">arXiv</a> </div>
+      </div>
+      
+      
+      <div id="abstract41" class="abstract">
+	<p>
+	  We demonstrate that for expander graphs, for all
+	  \(\varepsilon > 0\), there exists a data structure of size
+	  \(\widetilde{O}(n\varepsilon^{-1})\) which can be used to return
+	  \((1+\varepsilon)\)-approximations to effective resistances
+	  in \(\widetilde{O}(1)\) time per query.  Short of storing all
+	  effective resistances, previous best approaches could
+	  achieve \(\widetilde{O}(n\varepsilon^{-2})\) size and
+	  \(\widetilde{O}(\varepsilon^{-2})\) time per query by storing
+	  Johnson–Lindenstrauss vectors for each vertex, or
+	  \(\widetilde{O}(n\varepsilon^{-1})\) size and
+	  \(\widetilde{O}(n\varepsilon^{-1})\) time per query by storing a
+	  spectral sketch.<br/>
+
+	  Our construction is based on two key ideas: 1)
+	  \(\varepsilon^{-1}\)-sparse, \(\varepsilon\)-additive
+	  approximations to \({\sigma_u}\) for all \(u\), vectors
+	  similar to \(DL^+1_u\) can be used to recover \((1 +
+	  \varepsilon)\)-approximations to the effective resistances,
+	  2) In expander graphs, only \(\widetilde{O}(\varepsilon^{-1})\)
+	  coordinates of \({\sigma_u}\) are larger than
+	  \(\varepsilon\). We give an
+	  efficient construction for such a data structure in
+	  \(\widetilde{O}(m + n\varepsilon^{-2})\) time via random walks. 
+	  This results in an algorithm on expander graphs for
+	  computing \((1+\varepsilon)\)-approximate effective
+	  resistances for \(s\) vertex pairs that runs in \(\widetilde{O}(m +
+	  n\varepsilon^{-2} + s)\) time, improving over the previously
+	  best known running time of \(m^{1 + o(1)} + (n +
+	  s)n^{o(1)}\varepsilon^{-1.5}\) for \(s =
+	  \omega(n\varepsilon^{-0.5})\).<br/>
+  
+	  We employ the above algorithm to compute a
+	  \((1+\delta)\)-approximation to the number of spanning trees
+	  in an expander graph, or equivalently, approximating the
+	  (pseudo)determinant of its Laplacian in \(\widetilde{O}(m +
+	  n^{1.5}\delta^{-1})\) time. This improves on the previously
+	  best known result of \(m^{1+o(1)} +
+	  n^{1.875+o(1)}\delta^{-1.75}\) time, and matches the best
+	  known size of determinant sparsifiers.
+	</p>
+      </div>
+    </div><!--article ends-->
+
+    
+    <div class="article">
+      <div class="title">
+	A Simple Framework for Finding Balanced Sparse Cuts via APSP
+      </div>
+
+      <div class="conf">
+	<a href="https://meetings.siam.org/sess/dsp_talk.cfm?p=128256"
+	   target="_blank">
+	  SOSA 2023
+	</a>
+      </div>
+      
+      <div class="author_list">
+	with
+	<span class="authors">
+	  Li Chen, Rasmus Kyng, Maximilian Probst Gutenberg
+	</span>
+      </div>
+
+      
+      <div class="link_list">
+	<div class="link">
+	  <a href="javascript:toggle('abstract40')">Abstract</a>
+	</div>
+	<div class="link">
+	  <a href="https://epubs.siam.org/doi/abs/10.1137/1.9781611977585.ch5"
+	     target="_blank">Conference</a> </div>
+	<div class="link">
+	  <a href="https://arxiv.org/abs/2209.08845"
+	     target="_blank">arXiv</a> </div>
+      </div>
+      
+      
+      <div id="abstract40" class="abstract">
+	<p>
+	  We present a very simple and intuitive algorithm to find
+	  balanced sparse cuts in a graph via shortest-paths. Our
+	  algorithm combines a new multiplicative-weights framework
+	  for solving unit-weight multi-commodity flows with standard
+	  ball growing arguments.
+	  
+	  Using Dijkstra's algorithm for computing the shortest paths
+	  afresh every time gives a very simple algorithm that runs in
+	  time \(\widetilde{O}(m^2/\phi)\) and finds an
+	  \(\widetilde{O}(\phi)\)-sparse balanced cut, when the given
+	  graph has a \(\phi\)-sparse balanced cut. Combining our
+	  algorithm with known deterministic data-structures for
+	  answering approximate All Pairs Shortest Paths (APSP)
+	  queries under increasing edge weights (decremental setting),
+	  we obtain a simple deterministic algorithm that finds
+	  \(m^{o(1)}\phi\)-sparse balanced cuts in \(m^{1+o(1)}/\phi\)
+	  time. Our deterministic almost-linear time algorithm matches
+	  the state-of-the-art in randomized and deterministic
+	  settings up to subpolynomial factors, while being
+	  significantly simpler to understand and analyze, especially
+	  compared to the only almost-linear time deterministic
+	  algorithm, a recent breakthrough by
+	  Chuzhoy-Gao-Li-Nanongkai- Peng-Saranurak (FOCS 2020).
+	</p>
+      </div>
+    </div><!--article ends-->
 
 
 

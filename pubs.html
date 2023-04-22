@@ -42,10 +42,9 @@
 <!--End Script for toggling abstracts-->
 
 <!--Script for mathjax-->
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
-<!--End Script for toggling abstracts-->
 
 
 
@@ -84,9 +83,153 @@
     </div>-->
   <div id="pubs" class="section">
     <H3>List of Publications</H3>
-    
-    
 
+
+    <div class="article">
+      <div class="title">
+	A New Approach to Estimating Effective Resistances <br/> and
+	Counting Spanning Trees in Expander Graphs
+      </div>
+
+      <div class="conf">
+	<a href="https://www.siam.org/conferences/cm/program/accepted-papers/soda23-accepted-papers"
+	   target="_blank">
+	  SODA 2023
+	</a>
+      </div>
+      
+      <div class="author_list">
+	with
+	<span class="authors">
+	  Lawrence Li
+	</span>
+      </div>
+
+      
+      <div class="link_list">
+	<div class="link">
+	  <a href="javascript:toggle('abstract41')">Abstract</a>
+	</div>
+	<div class="link">
+	  <a href="https://epubs.siam.org/doi/10.1137/1.9781611977554.ch102"
+	     target="_blank">Conference</a> </div>
+	<div class="link">
+	  <a href="https://arxiv.org/abs/2211.01468"
+	     target="_blank">arXiv</a> </div>
+      </div>
+      
+      
+      <div id="abstract41" class="abstract">
+	<p>
+	  We demonstrate that for expander graphs, for all
+	  \(\varepsilon > 0\), there exists a data structure of size
+	  \(\widetilde{O}(n\varepsilon^{-1})\) which can be used to return
+	  \((1+\varepsilon)\)-approximations to effective resistances
+	  in \(\widetilde{O}(1)\) time per query.  Short of storing all
+	  effective resistances, previous best approaches could
+	  achieve \(\widetilde{O}(n\varepsilon^{-2})\) size and
+	  \(\widetilde{O}(\varepsilon^{-2})\) time per query by storing
+	  Johnson–Lindenstrauss vectors for each vertex, or
+	  \(\widetilde{O}(n\varepsilon^{-1})\) size and
+	  \(\widetilde{O}(n\varepsilon^{-1})\) time per query by storing a
+	  spectral sketch.<br/>
+
+	  Our construction is based on two key ideas: 1)
+	  \(\varepsilon^{-1}\)-sparse, \(\varepsilon\)-additive
+	  approximations to \({\sigma_u}\) for all \(u\), vectors
+	  similar to \(DL^+1_u\) can be used to recover \((1 +
+	  \varepsilon)\)-approximations to the effective resistances,
+	  2) In expander graphs, only \(\widetilde{O}(\varepsilon^{-1})\)
+	  coordinates of \({\sigma_u}\) are larger than
+	  \(\varepsilon\). We give an
+	  efficient construction for such a data structure in
+	  \(\widetilde{O}(m + n\varepsilon^{-2})\) time via random walks. 
+	  This results in an algorithm on expander graphs for
+	  computing \((1+\varepsilon)\)-approximate effective
+	  resistances for \(s\) vertex pairs that runs in \(\widetilde{O}(m +
+	  n\varepsilon^{-2} + s)\) time, improving over the previously
+	  best known running time of \(m^{1 + o(1)} + (n +
+	  s)n^{o(1)}\varepsilon^{-1.5}\) for \(s =
+	  \omega(n\varepsilon^{-0.5})\).<br/>
+  
+	  We employ the above algorithm to compute a
+	  \((1+\delta)\)-approximation to the number of spanning trees
+	  in an expander graph, or equivalently, approximating the
+	  (pseudo)determinant of its Laplacian in \(\widetilde{O}(m +
+	  n^{1.5}\delta^{-1})\) time. This improves on the previously
+	  best known result of \(m^{1+o(1)} +
+	  n^{1.875+o(1)}\delta^{-1.75}\) time, and matches the best
+	  known size of determinant sparsifiers.
+	</p>
+      </div>
+    </div><!--article ends-->
+
+    
+    <div class="article">
+      <div class="title">
+	A Simple Framework for Finding Balanced Sparse Cuts via APSP
+      </div>
+
+      <div class="conf">
+	<a href="https://meetings.siam.org/sess/dsp_talk.cfm?p=128256"
+	   target="_blank">
+	  SOSA 2023
+	</a>
+      </div>
+      
+      <div class="author_list">
+	with
+	<span class="authors">
+	  Li Chen, Rasmus Kyng, Maximilian Probst Gutenberg
+	</span>
+      </div>
+
+      
+      <div class="link_list">
+	<div class="link">
+	  <a href="javascript:toggle('abstract40')">Abstract</a>
+	</div>
+	<div class="link">
+	  <a href="https://epubs.siam.org/doi/abs/10.1137/1.9781611977585.ch5"
+	     target="_blank">Conference</a> </div>
+	<div class="link">
+	  <a href="https://arxiv.org/abs/2209.08845"
+	     target="_blank">arXiv</a> </div>
+      </div>
+      
+      
+      <div id="abstract40" class="abstract">
+	<p>
+	  We present a very simple and intuitive algorithm to find
+	  balanced sparse cuts in a graph via shortest-paths. Our
+	  algorithm combines a new multiplicative-weights framework
+	  for solving unit-weight multi-commodity flows with standard
+	  ball growing arguments.
+	  
+	  Using Dijkstra's algorithm for computing the shortest paths
+	  afresh every time gives a very simple algorithm that runs in
+	  time \(\widetilde{O}(m^2/\phi)\) and finds an
+	  \(\widetilde{O}(\phi)\)-sparse balanced cut, when the given
+	  graph has a \(\phi\)-sparse balanced cut. Combining our
+	  algorithm with known deterministic data-structures for
+	  answering approximate All Pairs Shortest Paths (APSP)
+	  queries under increasing edge weights (decremental setting),
+	  we obtain a simple deterministic algorithm that finds
+	  \(m^{o(1)}\phi\)-sparse balanced cuts in \(m^{1+o(1)}/\phi\)
+	  time. Our deterministic almost-linear time algorithm matches
+	  the state-of-the-art in randomized and deterministic
+	  settings up to subpolynomial factors, while being
+	  significantly simpler to understand and analyze, especially
+	  compared to the only almost-linear time deterministic
+	  algorithm, a recent breakthrough by
+	  Chuzhoy-Gao-Li-Nanongkai- Peng-Saranurak (FOCS 2020).
+	</p>
+      </div>
+    </div><!--article ends-->
+
+
+
+    
     <div class="article">
       <div class="title">
 	Optimal Methods for Higher-Order Smooth Monotone Variational Inequalities
@@ -128,13 +271,13 @@
 	  generalizes convex optimization and saddle-point
 	  problems. Recent works (Bullins and Lai (2020), Lin and
 	  Jordan (2021), Jiang and Mokhtari (2022)) present methods
-	  that achieve a rate of \(\tilde{O}(\varepsilon^{-2/(p+1)})\)
+	  that achieve a rate of \(\widetilde{O}(\varepsilon^{-2/(p+1)})\)
 	  for \(p \ge 1\), extending results by (Nemirovski (2004))
 	  and (Monteiro and Svaiter (2012)) for p=1,2. A drawback to
 	  these approaches, however, is their reliance on a line
 	  search scheme. We provide the first pth-order method that
 	  achieves a rate of
-	  \(\tilde{O}(\varepsilon^{-2/(p+1)})\). Our method does not
+	  \(\widetilde{O}(\varepsilon^{-2/(p+1)})\). Our method does not
 	  rely on a line search routine, thereby improving upon
 	  previous rates by a logarithmic factor. Building on the
 	  Mirror Prox method of Nemirovski (2004), our algorithm works
@@ -314,7 +457,7 @@
 	  flow [Christiano et al., STOC'11] and, more recently, ℓp
 	  regression [Adil et al., SODA'19], in terms of improving the
 	  iteration complexity from \(O(m^{1/2})\) to
-	  \(\tilde{O}(m^{1/3})\), where \(m\) is the number of
+	  \(\widetilde{O}(m^{1/3})\), where \(m\) is the number of
 	  rows of the design matrix, and where each iteration amounts
 	  to a linear system solve. However, a considerable drawback
 	  is that these methods require both problem-specific
@@ -527,7 +670,7 @@
 	    \((1\pm\epsilon)\)-approximations to effective resistances
 	    of all edges in time \(m^{1+o(1)}\epsilon^{-1.5}\),
 	    improving over the previous best of
-	    \(\tilde{O}(\min\{m\epsilon^{-2},n^2
+	    \(\widetilde{O}(\min\{m\epsilon^{-2},n^2
 	    \epsilon^{-1}\})\). This gives an algorithm to approximate
 	    the determinant of a Laplacian up to \((1\pm\epsilon)\) in
 	    \(m^{1 + o(1)} + n^{15/8+o(1)}\epsilon^{-7/4}\) time.
@@ -1000,8 +1143,8 @@
 	    problem, \(\min \|x\|_p\) such that \(Ax = b\), for all
 	    \(p \in (1,2) \cup (2,\infty)\). Our algorithms obtain a
 	    high accuracy solution in
-	    \(\tilde{O}_p(m^{\frac{|p-2|}{2p+|p-2|}}) \le
-	    \tilde{O}_p(m^{{1}/{3}})\) iterations, where each
+	    \(\widetilde{O}_p(m^{\frac{|p-2|}{2p+|p-2|}}) \le
+	    \widetilde{O}_p(m^{{1}/{3}})\) iterations, where each
 	    iteration requires solving an \(m \times m\) linear
 	    system, with \(m\) being the dimension of the ambient
 	    space.</p>
@@ -1009,7 +1152,7 @@
 	    approximate inverse of the linear systems that we need to
 	    solve at each iteration, we give algorithms for solving
 	    \(\ell_p\)-regression to 1/poly(n) accuracy that runs in
-	    time \(\tilde{O}_p(m^{\max\{\omega, 7/3\}}) \), where
+	    time \(\widetilde{O}_p(m^{\max\{\omega, 7/3\}}) \), where
 	    \(\omega\) is the matrix multiplication constant. For the
 	    current best value of \(\omega > 2.37\), this means that
 	    we can solve \(\ell_p\) regression as fast as \(\ell_p\)
@@ -1020,8 +1163,8 @@
 	    solvers for linear systems in graph Laplacians to give
 	    minimum \(\ell_p\)-norm flow / voltage solutions to
 	    1/poly(n) accuracy on an undirected graph with \(m\) edges
-	    in \(\tilde{O}_p(m^{1+\frac{|p-2|}{2p+|p-2|}}) \le
-	    \tilde{O}_p(m^{{4}/{3}})\) time. </p>
+	    in \(\widetilde{O}_p(m^{1+\frac{|p-2|}{2p+|p-2|}}) \le
+	    \widetilde{O}_p(m^{{4}/{3}})\) time. </p>
 	  <p>For sparse graphs and for
 	    matrices with similar dimensions, our iteration counts and
 	    running times improve upon the p-norm regression algorithm
@@ -1278,8 +1421,8 @@ resistances of all edges.
 	<div id="abstract22" class="abstract"> <p> We present an
 	    algorithm that, with high probability, generates a random
 	    spanning tree from an edge-weighted undirected graph in
-	    \(\tilde{O}(n^{\frac{4}{3}} m^{\frac{1}{2}} +
-	    n^2)\) time (The \(\tilde{O}\) notation hides polylog(n)
+	    \(\widetilde{O}(n^{\frac{4}{3}} m^{\frac{1}{2}} +
+	    n^2)\) time (The \(\widetilde{O}\) notation hides polylog(n)
 	    factors). The tree is sampled from a distribution where
 	    the probability of each tree is proportional to the
 	    product of its edge weights. This improves upon the
@@ -1287,7 +1430,7 @@ resistances of all edges.
 	    in matrix multiplication time, \(O(n^\omega)\). For the
 	    special case of unweighted graphs, this improves upon the
 	    best previously known running time of
-	    \(\tilde{O}(\min\{n^\omega, m\sqrt{n},
+	    \(\widetilde{O}(\min\{n^\omega, m\sqrt{n},
 	    m^{\frac{4}{3}}\})\) for \(m \gg n^{\frac{5}{3}}\)
 	    (Colbourn et al. '96, Kelner-Madry '09, Madry et al. '15).</p>
 	    
@@ -1299,9 +1442,9 @@ and the fact that effective resistance is preserved in the graph
 resulting from eliminating a subset of vertices (called a Schur
 complement). As part of our algorithm, we show how to compute
 ϵ-approximate effective resistances for a set S of vertex pairs via
-approximate Schur complements in \(\tilde{O}(m +
+approximate Schur complements in \(\widetilde{O}(m +
 (n+|S|)\epsilon^{-2})\) time, without using the Johnson-Lindenstrauss
-lemma which requires \(\tilde{O} \min\{(m+|S|)\epsilon^{-2}, m +n
+lemma which requires \(\widetilde{O} \min\{(m+|S|)\epsilon^{-2}, m +n
 \epsilon^{-4} + |S| \epsilon^{-2}\} \)  time. We combine this approximation
 procedure with an error correction procedure for handing edges where
 our estimate isn't sufficiently accurate.
@@ -1719,13 +1862,13 @@ As an application, we show how to maintain a spectral sparsifier of a
 	  present an algorithm that computes a minimal Lipschitz
 	  extension in expected linear time, and an algorithm that
 	  computes an absolutely minimal Lipschitz extension in expected
-	  time \(\tilde{O}(mn)\). The latter algorithm has variants that
+	  time \(\widetilde{O}(mn)\). The latter algorithm has variants that
 	  seem to run much faster in practice. These extensions are
 	  particularly amenable to regularization: we can perform
 	  \(\ell_{0}\)-regularization on the given values in polynomial
 	  time and \(\ell_{1}\)-regularization on the initial function
 	  values and on graph edge weights in time
-	  \(\tilde{O}(m^{\frac{3}{2}})\).
+	  \(\widetilde{O}(m^{\frac{3}{2}})\).
 	  </p>
 	</div>
 	</div><!--article ends-->
@@ -1840,12 +1983,12 @@ As an application, we show how to maintain a spectral sparsifier of a
 	  context. <p/>
 
 	  <p>Our main result is that for every CSP F, for \(k <
-	  \tilde{O}(\log^{\frac{1}{4}} n)\), there is a polynomial time
+	  \widetilde{O}(\log^{\frac{1}{4}} n)\), there is a polynomial time
 	  constant factor <it>Pareto</it> approximation algorithm for k
 	  simultaneous Max-F-CSP instances. Our methods are quite
 	  general, and we also use them to give an improved
 	  approximation factor for simultaneous Max-w-SAT (for \(k
-	  <\tilde{O}(\log^{\frac{1}{3}} n)\)).  In contrast, for \(k =
+	  <\widetilde{O}(\log^{\frac{1}{3}} n)\)).  In contrast, for \(k =
 	  \omega(\log n)\), no nonzero approximation factor for k
 	  simultaneous Max-F-CSP instances can be achieved in polynomial
 	  time (assuming the Exponential Time Hypothesis).
@@ -2155,7 +2298,7 @@ As an application, we show how to maintain a spectral sparsifier of a
 	
     <div class="article">
     <div class="title">Approximating the Exponential, 
-	the Lanczos Method and <br/> an \(\tilde{O}(m)\)-Time Spectral
+	the Lanczos Method and <br/> an \(\widetilde{O}(m)\)-Time Spectral
 	  Algorithm for Balanced Separator</div>
 	
       <div class="conf">
@@ -2195,7 +2338,7 @@ As an application, we show how to maintain a spectral sparsifier of a
 	  either finds an \(\Omega(b)\)-balanced cut of conductance
 	  \(O(\sqrt{\gamma})\) in G, or outputs a certificate that all
 	  b-balanced cuts in G have conductance at least \(\gamma,\)
-	  and runs in time \(\tilde{O}(m).\) This settles the question
+	  and runs in time \(\widetilde{O}(m).\) This settles the question
 	  of designing asymptotically optimal spectral algorithms for
 	  balanced separator.  Our algorithm relies on a variant of
 	  the heat kernel random walk and requires, as a subroutine,
@@ -2206,11 +2349,11 @@ As an application, we show how to maintain a spectral sparsifier of a
 	  next set of results. Our main result here is a new algorithm
 	  which computes a good approximation to exp(-A)v for a
 	  class of symmetric positive semidefinite (PSD) matrices A
-	  and a given vector v, in time roughly \(\tilde{O}(m_A),\)
+	  and a given vector v, in time roughly \(\widetilde{O}(m_A),\)
 	  where \(m_A\) is the number of non-zero entries of A. This
 	  uses, in a non-trivial way, the breakthrough result of
 	  Spielman and Teng on inverting symmetric and
-	  diagonally-dominant matrices in \(\tilde{O}(m_A)\) time.
+	  diagonally-dominant matrices in \(\widetilde{O}(m_A)\) time.
 	  Finally, we prove that \(e^{-x}\) can be uniformly
 	  approximated up to a small additive error, in a non-negative
 	  interval [a,b] with a polynomial of degree roughly
@@ -2223,7 +2366,7 @@ As an application, we show how to maintain a spectral sparsifier of a
 	  given vector w. As an application, we obtain a simple and
 	  practical algorithm, with output conductance
 	  \(O(\sqrt{\gamma}),\) for balanced separator that runs in time
-	  \(\tilde{O}(\frac{m}{\sqrt{\gamma}}).\) This latter algorithm
+	  \(\widetilde{O}(\frac{m}{\sqrt{\gamma}}).\) This latter algorithm
 	  matches the running time, but improves on the approximation
 	  guarantee of the Evolving-Sets-based algorithm by Andersen
 	  and Peres for balanced separator.</p>
