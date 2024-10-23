@@ -96,7 +96,8 @@
 						Decomposition
 					</div>
 					<div class="conf">
-						<a href="https://www.siam.org/conferences-events/siam-conferences/soda25/program/accepted-papers/" target="_blank">SODA 2025</a>
+						<a href="https://www.siam.org/conferences-events/siam-conferences/soda25/program/accepted-papers/"
+							target="_blank">SODA 2025</a>
 					</div>
 					<div class="author_list">
 						with
@@ -106,7 +107,7 @@
 					</div>
 					<div class="link_list">
 						<div class="link">
-							<a href="javascript:toggle('abstract49')">Abstract</a>
+							<a href="javascript:toggle('abstract51')">Abstract</a>
 						</div>
 						<div class="link">
 							<a href="" target="_blank">Conference</a>
@@ -115,24 +116,41 @@
 							<a href="https://arxiv.org/abs/2408.10172" target="_blank">arXiv</a>
 						</div>
 					</div>
-					<div id="abstract49" class="abstract">
+					<div id="abstract51" class="abstract">
 						<p>
-							We provide an algorithm that, given an $n$-vertex $m$-edge Eulerian graph with polynomially bounded weights, computes an \(\breve{O}(n\log^{2} n \cdot \varepsilon^{-2})\)-edge \(\varepsilon\)-approximate Eulerian sparsifier with high probability in \(\breve{O}(m\log^3 n)\) time (where \(\breve{O}(\cdot)\) hides \(\polyloglog(n)\) factors). Due to a reduction from [Peng-Song, STOC '22], this yields an \(\breve{O}(m\log^3 n + n\log^6 n)\)-time algorithm for solving \(n\)-vertex \(m\)-edge Eulerian Laplacian systems with polynomially-bounded weights with high probability, improving upon the previous state-of-the-art runtime of \(\Omega(m\log^8 n + n\log^{23} n)\). We also give a polynomial-time algorithm that computes \(O(\min(n\log n \cdot \varepsilon^{-2} + n\log^{5/3} n \cdot \varepsilon^{-4/3}, n\log^{3/2} n \cdot \varepsilon^{-2}))\)-edge sparsifiers,
+							We provide an algorithm that, given an $n$-vertex $m$-edge Eulerian graph with polynomially
+							bounded weights, computes an \(\breve{O}(n\log^{2} n \cdot \varepsilon^{-2})\)-edge
+							\(\varepsilon\)-approximate Eulerian sparsifier with high probability in \(\breve{O}(m\log^3
+							n)\) time (where \(\breve{O}(\cdot)\) hides \(\polyloglog(n)\) factors). Due to a reduction
+							from [Peng-Song, STOC '22], this yields an \(\breve{O}(m\log^3 n + n\log^6 n)\)-time
+							algorithm for solving \(n\)-vertex \(m\)-edge Eulerian Laplacian systems with
+							polynomially-bounded weights with high probability, improving upon the previous
+							state-of-the-art runtime of \(\Omega(m\log^8 n + n\log^{23} n)\). We also give a
+							polynomial-time algorithm that computes \(O(\min(n\log n \cdot \varepsilon^{-2} +
+							n\log^{5/3} n \cdot \varepsilon^{-4/3}, n\log^{3/2} n \cdot \varepsilon^{-2}))\)-edge
+							sparsifiers,
 							improving the best such sparsity bound of \(O(n\log^2 n \cdot
-							\varepsilon^{-2} + n\log^{8/3} n \cdot \varepsilon^{-4/3})\) [Sachdeva-Thudi-Zhao, ICALP '24]. 
-							
-							In contrast to prior Eulerian graph sparsification algorithms which used either short cycle or expander decompositions, our algorithms use  a simple efficient effective resistance decomposition scheme we introduce. Our algorithms apply a natural sampling scheme and electrical routing (to achieve degree balance) to such decompositions. Our analysis leverages new asymmetric variance bounds specialized to Eulerian Laplacians and tools from discrepancy theory.
+							\varepsilon^{-2} + n\log^{8/3} n \cdot \varepsilon^{-4/3})\) [Sachdeva-Thudi-Zhao, ICALP
+							'24].
+
+							In contrast to prior Eulerian graph sparsification algorithms which used either short cycle
+							or expander decompositions, our algorithms use a simple efficient effective resistance
+							decomposition scheme we introduce. Our algorithms apply a natural sampling scheme and
+							electrical routing (to achieve degree balance) to such decompositions. Our analysis
+							leverages new asymmetric variance bounds specialized to Eulerian Laplacians and tools from
+							discrepancy theory.
 						</p>
 					</div>
 				</div>
 
 				<div class="article">
 					<div class="title">
-						Almost-Linear Time Algorithms for Decremental Graphs: <br/>
+						Almost-Linear Time Algorithms for Decremental Graphs: <br />
 						Min-Cost Flow and More via Duality
 					</div>
 					<div class="conf">
-						<a href="https://focs.computer.org/2024/accepted-papers-for-focs-2024/" target="_blank">FOCS 2024</a>
+						<a href="https://focs.computer.org/2024/accepted-papers-for-focs-2024/" target="_blank">FOCS
+							2024</a>
 					</div>
 					<div class="author_list">
 						with
@@ -143,7 +161,7 @@
 					</div>
 					<div class="link_list">
 						<div class="link">
-							<a href="javascript:toggle('abstract48')">Abstract</a>
+							<a href="javascript:toggle('abstract50')">Abstract</a>
 						</div>
 						<div class="link">
 							<a href="" target="_blank">Conference</a>
@@ -152,11 +170,149 @@
 							<a href="https://arxiv.org/abs/2407.10830" target="_blank">arXiv</a>
 						</div>
 					</div>
+					<div id="abstract50" class="abstract">
+						<p>
+							We give the first almost-linear total time algorithm for deciding if a flow of cost at most
+							F still exists in a directed graph, with edge costs and capacities, undergoing decremental
+							updates, i.e., edge deletions, capacity decreases, and cost increases. This implies
+							almost-linear time algorithms for approximating the minimum-cost flow value and s-t distance
+							on such decremental graphs. Our framework additionally allows us to maintain decremental
+							strongly connected components in almost-linear time deterministically. These algorithms also
+							improve over the current best known runtimes for statically computing minimum-cost flow, in
+							both the randomized and deterministic settings.</p>
+
+						<p>We obtain our algorithms by taking the dual perspective, which yields cut-based algorithms.
+							More precisely, our algorithm computes the flow via a sequence of \(m^{1+o(1)}\) dynamic
+							min-ratio cut problems, the dual analog of the dynamic min-ratio cycle problem that
+							underlies recent fast algorithms for minimum-cost flow. Our main technical contribution is a
+							new data structure that returns an approximately optimal min-ratio cut in amortized
+							\(m^{o(1)}\) time by maintaining a tree-cut sparsifier. This is achieved by devising a new
+							algorithm to maintain the dynamic expander hierarchy of [Goranci-Räcke-Saranurak-Tan, SODA
+							2021] that also works in capacitated graphs. All our algorithms are deterministc, though
+							they can be sped up further using randomized techniques while still working against an
+							adaptive adversary.
+						</p>
+					</div>
+				</div>
+
+				<div class="article">
+					<div class="title">
+						Better Sparsifiers for Directed Eulerian Graphs
+					</div>
+					<div class="conf">
+						<a href="https://compose.ioc.ee/icalp2024/" target="_blank">ICALP 2024</a>
+					</div>
+					<div class="author_list">
+						with
+						<span class="authors">
+							A. Thudi, Y. Zhao
+						</span>
+					</div>
+					<div class="link_list">
+						<div class="link">
+							<a href="javascript:toggle('abstract49')">Abstract</a>
+						</div>
+						<div class="link">
+							<a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol297-icalp2024/LIPIcs.ICALP.2024.119/LIPIcs.ICALP.2024.119.pdf"
+								target="_blank">Conference</a>
+						</div>
+						<div class="link">
+							<a href="https://arxiv.org/abs/2311.06232" target="_blank">arXiv</a>
+						</div>
+					</div>
+					<div id="abstract49" class="abstract">
+						<p>
+							Spectral sparsification for directed Eulerian graphs is a key component in the design of
+							fast algorithms for solving directed Laplacian linear systems.
+							Directed Laplacian linear system solvers are crucial algorithmic primitives to fast
+							computation of fundamental problems on random walks, such as computing stationary
+							distributions, hitting and commute times, and personalized PageRank vectors.
+							While spectral sparsification is well understood for undirected graphs and it is known that
+							for every graph \(G,\) \((1+\varepsilon)\)-sparsifiers with \(O(n\varepsilon^{-2})\) edges
+							exist [Batson-Spielman-Srivastava, STOC '09] (which is optimal), the best known
+							constructions of Eulerian sparsifiers require \(\Omega(n\varepsilon^{-2}\log^4 n)\) edges
+							and are based on short-cycle decompositions [Chu et al., FOCS '18].</p>
+
+							<p>In this paper, we give improved constructions of Eulerian sparsifiers, specifically:</p>
+
+							<p>1. We show that for every directed Eulerian graph \(\vec{G},\) there exists an Eulerian
+							sparsifier with \(O(n\varepsilon^{-2} \log^2 n \log^2\log n + n\varepsilon^{-4/3}\log^{8/3}
+							n)\) edges. This result is based on combining short-cycle decompositions
+							[Chu-Gao-Peng-Sachdeva-Sawlani-Wang, FOCS '18, SICOMP] and [Parter-Yogev, ICALP '19], with
+							recent progress on the matrix Spencer conjecture [Bansal-Meka-Jiang, STOC '23].</p>
+
+							<p>2. We give an improved analysis of the constructions based on short-cycle decompositions,
+							giving an \(m^{1+\delta}\)-time algorithm for any constant \(\delta > 0\) for constructing
+							Eulerian sparsifiers with \(O(n\varepsilon^{-2}\log^3 n)\) edges.
+
+						</p>
+					</div>
+				</div>
+
+				<div class="article">
+					<div class="title">
+						Optimal Electrical Oblivious Routing on Expanders
+					</div>
+					<div class="conf">
+						<a href="https://compose.ioc.ee/icalp2024/" target="_blank">ICALP 2024</a>
+					</div>
+					<div class="author_list">
+						with
+						<span class="authors">
+							C. Florescu, R. Kyng, M. P. Gutenberg
+						</span>
+					</div>
+					<div class="link_list">
+						<div class="link">
+							<a href="javascript:toggle('abstract48')">Abstract</a>
+						</div>
+						<div class="link">
+							<a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol297-icalp2024/LIPIcs.ICALP.2024.65/LIPIcs.ICALP.2024.65.pdf"
+								target="_blank">Conference</a>
+						</div>
+						<div class="link">
+							<a href="https://arxiv.org/abs/2406.07252" target="_blank">arXiv</a>
+						</div>
+					</div>
 					<div id="abstract48" class="abstract">
 						<p>
-							We give the first almost-linear total time algorithm for deciding if a flow of cost at most F still exists in a directed graph, with edge costs and capacities, undergoing decremental updates, i.e., edge deletions, capacity decreases, and cost increases. This implies almost-linear time algorithms for approximating the minimum-cost flow value and s-t distance on such decremental graphs. Our framework additionally allows us to maintain decremental strongly connected components in almost-linear time deterministically. These algorithms also improve over the current best known runtimes for statically computing minimum-cost flow, in both the randomized and deterministic settings.</p>
+							"In this paper, we investigate the question of whether the electrical flow routing is a good
+							oblivious routing
+							scheme on an \(m\)-edge graph \(G = (V, E)\) that is a \(\Phi\)-expander, i.e. where
+							\(|\partial S| \geq \Phi
+							\cdot \text{vol}vol(S)\) for every \(S \subseteq V, \text{vol}(S) \leq \text{vol}(V)/2\).
+							Beyond its simplicity and structural
+							importance, this question is well-motivated by the current state-of-the-art of fast
+							algorithms for
+							\(\ell_{\infty}\) oblivious routings that reduce to the expander-case which is in turn
+							solved by electrical flow
+							routing.</p>
 
-							<p>We obtain our algorithms by taking the dual perspective, which yields cut-based algorithms. More precisely, our algorithm computes the flow via a sequence of \(m^{1+o(1)}\) dynamic min-ratio cut problems, the dual analog of the dynamic min-ratio cycle problem that underlies recent fast algorithms for minimum-cost flow. Our main technical contribution is a new data structure that returns an approximately optimal min-ratio cut in amortized \(m^{o(1)}\) time by maintaining a tree-cut sparsifier. This is achieved by devising a new algorithm to maintain the dynamic expander hierarchy of [Goranci-Räcke-Saranurak-Tan, SODA 2021] that also works in capacitated graphs. All our algorithms are deterministc, though they can be sped up further using randomized techniques while still working against an adaptive adversary.
+						<p>Our main result proves that the electrical routing is an \(O(\Phi^{-1} \log m)\)-competitive
+							oblivious routing
+							in the \(\ell_1\)- and \(\ell_\infty\)-norms. We further observe that the oblivious routing
+							is \(O(\log^2
+							m)\)-competitive in the \(\ell_2\)-norm and, in fact, \(O(\log m)\)-competitive if
+							\(\ell_2\)-localization is
+							\(O(\log m)\) which is widely believed.</p>
+
+						<p>Using these three upper bounds, we can smoothly interpolate to obtain upper bounds for every
+							\(p \in [2,
+							\infty]\) and \(q\) given by \(1/p + 1/q = 1\). Assuming \(\ell_2\)-localization in \(O(\log
+							m)\), we obtain
+							that in \(\ell_p\) and \(\ell_q\), the electrical oblivious routing is
+							\(O(\Phi^{-(1-2/p)}\log m)\) competitive.
+							Using the currently known result for \(\ell_2\)-localization, this ratio deteriorates by at
+							most a
+							sublogarithmic factor for every \(p, q \neq 2\).</p>
+
+						<p>We complement our upper bounds with lower bounds that show that the electrical routing for
+							any such \(p\) and
+							\(q\) is \(\Omega(\Phi^{-(1-2/p)}\log m)\)-competitive. This renders our results in
+							\(\ell_1\) and
+							\(\ell_{\infty}\) unconditionally tight up to constants, and the result in any \(\ell_p\)-
+							and \(\ell_q\)-norm
+							to be tight in case of \(\ell_2\)-localization in \(O(\log m)\).</p>
 						</p>
 					</div>
 				</div>
@@ -180,7 +336,8 @@
 							<a href="javascript:toggle('abstract47')">Abstract</a>
 						</div>
 						<div class="link">
-							<a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol287-itcs2024/LIPIcs.ITCS.2024.13/LIPIcs.ITCS.2024.13.pdf" target="_blank">Conference</a>
+							<a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol287-itcs2024/LIPIcs.ITCS.2024.13/LIPIcs.ITCS.2024.13.pdf"
+								target="_blank">Conference</a>
 						</div>
 						<div class="link">
 							<a href="https://arxiv.org/abs/2305.05826" target="_blank">arXiv</a>
@@ -188,9 +345,27 @@
 					</div>
 					<div id="abstract47" class="abstract">
 						<p>
-							Let \(S\in\mathbb{R}^{n\times n}\) satisfy \(\|\mathbb{1}-S\|_2 \le \varepsilon n\), where \(\mathbb{1}\) is the all ones matrix and \(\|\cdot\|_2\) is the spectral norm. It is well-known that there exists such an \(S\) with just \(O(n/\varepsilon^2)\) non-zero entries: we can let \(S\) be the scaled adjacency matrix of a Ramanujan expander graph. We show that such an \(S\) yields a universal sparsifier for any positive semidefinite (PSD) matrix. In particular, for any PSD \(A\in\mathbb{R}^{n\times n}\) with entries bounded in magnitude by 1, \(\|A-A\circ S\|_2 \le \varepsilon n\), where \(\circ\) denotes the entrywise (Hadamard) product. Our techniques also give universal sparsifiers for non-PSD matrices. In this case, letting \(S\) be the scaled adjacency matrix of a Ramanujan graph with \(\tilde{O}(n/\varepsilon^4)\) edges, we have \(\|A-A\circ S\|_2 \le \varepsilon \cdot \max(n,\|A\|_1)\), where \(\|A\|_1\) is the nuclear norm. We show that the above bounds for both PSD and non-PSD matrices are tight up to log factors.</p>
-							<p>Since \(A\circ S\) can be constructed deterministically, our result for PSD matrices derandomizes and improves upon known results for randomized matrix sparsification, which require randomly sampling \(O(n\log n \varepsilon^{-2})\) entries. We also leverage our results to give the first deterministic algorithms for several problems related to singular value approximation that run in faster than matrix multiplication time.</p>
-							<p>Finally, if \(A\in\{−1,0,1\}^{n\times n}\) is PSD, we show that \(\tilde{A}\)  with \(\|A-\tilde{A}\|_2 \le \varepsilon n\) can be obtained by deterministically reading \(\tilde{O}(n/\varepsilon)\) entries of \(A\). This improves the \(1/\varepsilon\) dependence on our result for general PSD matrices and is near-optimal.
+							Let \(S\in\mathbb{R}^{n\times n}\) satisfy \(\|\mathbb{1}-S\|_2 \le \varepsilon n\), where
+							\(\mathbb{1}\) is the all ones matrix and \(\|\cdot\|_2\) is the spectral norm. It is
+							well-known that there exists such an \(S\) with just \(O(n/\varepsilon^2)\) non-zero
+							entries: we can let \(S\) be the scaled adjacency matrix of a Ramanujan expander graph. We
+							show that such an \(S\) yields a universal sparsifier for any positive semidefinite (PSD)
+							matrix. In particular, for any PSD \(A\in\mathbb{R}^{n\times n}\) with entries bounded in
+							magnitude by 1, \(\|A-A\circ S\|_2 \le \varepsilon n\), where \(\circ\) denotes the
+							entrywise (Hadamard) product. Our techniques also give universal sparsifiers for non-PSD
+							matrices. In this case, letting \(S\) be the scaled adjacency matrix of a Ramanujan graph
+							with \(\tilde{O}(n/\varepsilon^4)\) edges, we have \(\|A-A\circ S\|_2 \le \varepsilon \cdot
+							\max(n,\|A\|_1)\), where \(\|A\|_1\) is the nuclear norm. We show that the above bounds for
+							both PSD and non-PSD matrices are tight up to log factors.</p>
+						<p>Since \(A\circ S\) can be constructed deterministically, our result for PSD matrices
+							derandomizes and improves upon known results for randomized matrix sparsification, which
+							require randomly sampling \(O(n\log n \varepsilon^{-2})\) entries. We also leverage our
+							results to give the first deterministic algorithms for several problems related to singular
+							value approximation that run in faster than matrix multiplication time.</p>
+						<p>Finally, if \(A\in\{−1,0,1\}^{n\times n}\) is PSD, we show that \(\tilde{A}\) with
+							\(\|A-\tilde{A}\|_2 \le \varepsilon n\) can be obtained by deterministically reading
+							\(\tilde{O}(n/\varepsilon)\) entries of \(A\). This improves the \(1/\varepsilon\)
+							dependence on our result for general PSD matrices and is near-optimal.
 						</p>
 					</div>
 				</div>
@@ -205,7 +380,7 @@
 					<div class="author_list">
 						with
 						<span class="authors">
-							G. Goranci, M. Henzinger, H. R\"{a}cke, A. R. Sricharan
+							G. Goranci, M. Henzinger, H. Räcke, A. R. Sricharan
 						</span>
 					</div>
 					<div class="link_list">
@@ -213,7 +388,8 @@
 							<a href="javascript:toggle('abstract46')">Abstract</a>
 						</div>
 						<div class="link">
-							<a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol287-itcs2024/LIPIcs.ITCS.2024.55/LIPIcs.ITCS.2024.55.pdf" target="_blank">Conference</a>
+							<a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol287-itcs2024/LIPIcs.ITCS.2024.55/LIPIcs.ITCS.2024.55.pdf"
+								target="_blank">Conference</a>
 						</div>
 						<div class="link">
 							<a href="https://arxiv.org/abs/2303.02491" target="_blank">arXiv</a>
@@ -221,16 +397,22 @@
 					</div>
 					<div id="abstract46" class="abstract">
 						<p>
-							Oblivious routing is a well-studied paradigm that uses static precomputed routing tables for selecting
-							routing paths within a network. Existing oblivious routing schemes with polylogarithmic competitive
-							ratio for general networks are tree-based, in the sense that routing is performed according to a
-							convex combination of trees. However, this restriction to trees leads to a construction that has time
+							Oblivious routing is a well-studied paradigm that uses static precomputed routing tables for
+							selecting
+							routing paths within a network. Existing oblivious routing schemes with polylogarithmic
+							competitive
+							ratio for general networks are tree-based, in the sense that routing is performed according
+							to a
+							convex combination of trees. However, this restriction to trees leads to a construction that
+							has time
 							quadratic in the size of the network and does not parallelize well.</p>
-							<p>In this paper we study oblivious routing schemes based on electrical routing. In particular,
+						<p>In this paper we study oblivious routing schemes based on electrical routing. In particular,
 							we show that general networks with n vertices and m edges admit a routing scheme that has
-							competitive ratio \(O( \log^2 n)\) and consists of a convex combination of only  \({O}(\sqrt{m})\) electrical routings.
-							This immediately leads to an improved construction algorithm with time  \(\tilde{O}(m^{3/2})\) that can also be
-							implemented in parallel with  \(\tilde{O}(\sqrt{m})\) depth.
+							competitive ratio \(O( \log^2 n)\) and consists of a convex combination of only
+							\({O}(\sqrt{m})\) electrical routings.
+							This immediately leads to an improved construction algorithm with time
+							\(\tilde{O}(m^{3/2})\) that can also be
+							implemented in parallel with \(\tilde{O}(\sqrt{m})\) depth.
 						</p>
 					</div>
 				</div>
@@ -253,7 +435,8 @@
 							<a href="javascript:toggle('abstract45')">Abstract</a>
 						</div>
 						<div class="link">
-							<a href="https://epubs.siam.org/doi/10.1137/1.9781611977912.127" target="_blank">Conference</a>
+							<a href="https://epubs.siam.org/doi/10.1137/1.9781611977912.127"
+								target="_blank">Conference</a>
 						</div>
 						<div class="link">
 							<a href="https://arxiv.org/abs/2310.16351" target="_blank">arXiv</a>
@@ -261,24 +444,37 @@
 					</div>
 					<div id="abstract45" class="abstract">
 						<p>
-							In numerical linear algebra, considerable effort has been devoted to obtaining faster algorithms
-							for linear systems whose underlying matrices exhibit structural properties. A prominent success
-							story is the method of generalized nested dissection [Lipton-Rose-Tarjan’79] for separable matrices.
-							On the other hand, the majority of recent developments in the design of efficient linear program
-							(LP) solves do not leverage the ideas underlying these faster linear system solvers nor consider
+							In numerical linear algebra, considerable effort has been devoted to obtaining faster
+							algorithms
+							for linear systems whose underlying matrices exhibit structural properties. A prominent
+							success
+							story is the method of generalized nested dissection [Lipton-Rose-Tarjan’79] for separable
+							matrices.
+							On the other hand, the majority of recent developments in the design of efficient linear
+							program
+							(LP) solves do not leverage the ideas underlying these faster linear system solvers nor
+							consider
 							the separable structure of the constraint matrix.</p>
 
-							<p>We give a faster algorithm for separable linear programs. Specifically, we consider LPs of
-							the form \(\min_{Ax=b,\ell\le x \le u} c^{\top}x\), where the graphical support of the constraint matrix \(A \in R^{n \times m}\)
-							is \(O(n^\alpha)\)-separable. These include flow problems on planar graphs and low treewidth matrices
-							among others. We present an \(\tilde{O}((m + m^{1/2+2\alpha}) \log (1/\varepsilon)\) time algorithm for these LPs, where \(\varepsilon\) is the relative accuracy of the solution.</p>
-							<p>Our new solver has two important implications: for the \(k\)-multicommodity flow problem
+						<p>We give a faster algorithm for separable linear programs. Specifically, we consider LPs of
+							the form \(\min_{Ax=b,\ell\le x \le u} c^{\top}x\), where the graphical support of the
+							constraint matrix \(A \in R^{n \times m}\)
+							is \(O(n^\alpha)\)-separable. These include flow problems on planar graphs and low treewidth
+							matrices
+							among others. We present an \(\tilde{O}((m + m^{1/2+2\alpha}) \log (1/\varepsilon)\) time
+							algorithm for these LPs, where \(\varepsilon\) is the relative accuracy of the solution.</p>
+						<p>Our new solver has two important implications: for the \(k\)-multicommodity flow problem
 							on planar graphs, we obtain an algorithm running in eO(k5/2m3/2) time in the high accuracy
-							regime; and when the support of A is \(O(n^\alpha)\)-separable with \(\alpha \le 1/4\) 1/4, our algorithm runs in \(\tilde{O}(m)\)
-							time, which is nearly optimal. The latter significantly improves upon the natural approach of
-							combining interior point methods and nested dissection, whose time complexity is lower bounded
-							by \(\Omega(\sqrt{m}(m + m^{\alpha \omega} )) = \Omega(m^{3/2})\), where \(\omega\) is the matrix multiplication constant. Lastly, in the
-							setting of low-treewidth LPs, we recover the results of [ DLY21a] and [ GS22] with significantly
+							regime; and when the support of A is \(O(n^\alpha)\)-separable with \(\alpha \le 1/4\) 1/4,
+							our algorithm runs in \(\tilde{O}(m)\)
+							time, which is nearly optimal. The latter significantly improves upon the natural approach
+							of
+							combining interior point methods and nested dissection, whose time complexity is lower
+							bounded
+							by \(\Omega(\sqrt{m}(m + m^{\alpha \omega} )) = \Omega(m^{3/2})\), where \(\omega\) is the
+							matrix multiplication constant. Lastly, in the
+							setting of low-treewidth LPs, we recover the results of [ DLY21a] and [ GS22] with
+							significantly
 							simpler data structure machinery.
 						</p>
 					</div>
@@ -305,7 +501,8 @@
 							<a href="javascript:toggle('abstract44')">Abstract</a>
 						</div>
 						<div class="link">
-							<a href="https://epubs.siam.org/doi/10.1137/1.9781611977912.106" target="_blank">Conference</a>
+							<a href="https://epubs.siam.org/doi/10.1137/1.9781611977912.106"
+								target="_blank">Conference</a>
 						</div>
 						<div class="link">
 							<a href="https://arxiv.org/abs/2311.03174" target="_blank">arXiv</a>
@@ -313,8 +510,24 @@
 					</div>
 					<div id="abstract44" class="abstract">
 						<p>
-							We provide an algorithm which, with high probability, maintains a \((1 — \varepsilon)\)-approximate maximum flow on an undirected graph undergoing m-edge additions in amortized \(m^{o(1)}\varepsilon^{-3}\) time per update. To obtain this result, we provide a more general algorithm that solves what we call the incremental, thresholded, p-norm flow problem that asks to determine the first edge-insertion in an undirected graph that causes the minimum $\ell_p$-norm flow to decrease below a given threshold in value. Since we solve this thresholded problem, our data structure succeeds against an adaptive adversary that can only see the data structure's output. Furthermore, since our algorithm holds for p = 2, we obtain improved algorithms for dynamically maintaining the effective resistance between a pair of vertices in an undirected graph undergoing edge insertions.</p>
-							<p>Our algorithm builds upon previous dynamic algorithms for approximately solving the minimum-ratio cycle problem that underlie previous advances on the maximum flow problem [Chen-Kyng-Liu-Peng-Probst Gutenberg-Sachdeva, FOCS ‘22] as well as recent dynamic maximum flow algorithms [v.d.Brand-Liu-Sidford, STOC ‘23]. Instead of using interior point methods, which were a key component of these recent advances, our algorithm uses an optimization method based on \(\ell_p\)-norm iterative refinement and the multiplicative weight update method. This ensures a monotonicity property in the minimum-ratio cycle subproblems that allows us to apply known data structures and bypass issues arising from adaptive queries.
+							We provide an algorithm which, with high probability, maintains a \((1 —
+							\varepsilon)\)-approximate maximum flow on an undirected graph undergoing m-edge additions
+							in amortized \(m^{o(1)}\varepsilon^{-3}\) time per update. To obtain this result, we provide
+							a more general algorithm that solves what we call the incremental, thresholded, p-norm flow
+							problem that asks to determine the first edge-insertion in an undirected graph that causes
+							the minimum $\ell_p$-norm flow to decrease below a given threshold in value. Since we solve
+							this thresholded problem, our data structure succeeds against an adaptive adversary that can
+							only see the data structure's output. Furthermore, since our algorithm holds for p = 2, we
+							obtain improved algorithms for dynamically maintaining the effective resistance between a
+							pair of vertices in an undirected graph undergoing edge insertions.</p>
+						<p>Our algorithm builds upon previous dynamic algorithms for approximately solving the
+							minimum-ratio cycle problem that underlie previous advances on the maximum flow problem
+							[Chen-Kyng-Liu-Peng-Probst Gutenberg-Sachdeva, FOCS ‘22] as well as recent dynamic maximum
+							flow algorithms [v.d.Brand-Liu-Sidford, STOC ‘23]. Instead of using interior point methods,
+							which were a key component of these recent advances, our algorithm uses an optimization
+							method based on \(\ell_p\)-norm iterative refinement and the multiplicative weight update
+							method. This ensures a monotonicity property in the minimum-ratio cycle subproblems that
+							allows us to apply known data structures and bypass issues arising from adaptive queries.
 						</p>
 					</div>
 				</div>
@@ -324,7 +537,8 @@
 						A Deterministic Almost-Linear Time Algorithm for Minimum-Cost Flow
 					</div>
 					<div class="conf">
-						<a href="https://focs.computer.org/2023/focs-2023-list-of-accepted-papers/" target="_blank">FOCS 2023</a>
+						<a href="https://focs.computer.org/2023/focs-2023-list-of-accepted-papers/" target="_blank">FOCS
+							2023</a>
 					</div>
 					<div class="author_list">
 						with
@@ -346,7 +560,24 @@
 					</div>
 					<div id="abstract43" class="abstract">
 						<p>
-							We give a deterministic \(m^{1+o(1)}\) time algorithm that computes exact maximum flows and minimum-cost flows on directed graphs with m edges and polynomially bounded integral demands, costs, and capacities. As a consequence, we obtain the first running time improvement for deterministic algorithms that compute maximum-flow in graphs with polynomial bounded capacities since the work of Goldberg-Rao [J.ACM ’98].Our algorithm builds on the framework of Chen-Kyng-Liu-Peng-Gutenberg-Sachdeva [FOCS ’22] that computes an optimal flow by computing a sequence of \(m^{1+o(1)}\)-approximate undirected minimum-ratio cycles. We develop a deterministic dynamic graph data-structure to compute such a sequence of minimum-ratio cycles in an amortized \(m^{o(1)}\) time per edge update. Our key technical contributions are deterministic analogues of the vertex sparsification and edge sparsification components of the data-structure from Chen et al. For the vertex sparsification component, we give a method to avoid the randomness in Chen et al. which involved sampling random trees to recurse on. For the edge sparsification component, we design a deterministic algorithm that maintains an embedding of a dynamic graph into a sparse spanner. We also show how our dynamic spanner can be applied to give a deterministic data structure that maintains a fully dynamic low-stretch spanning tree on graphs with polynomially bounded edge lengths, with subpolynomial average stretch and subpolynomial amortized time per edge update.
+							We give a deterministic \(m^{1+o(1)}\) time algorithm that computes exact maximum flows and
+							minimum-cost flows on directed graphs with m edges and polynomially bounded integral
+							demands, costs, and capacities. As a consequence, we obtain the first running time
+							improvement for deterministic algorithms that compute maximum-flow in graphs with polynomial
+							bounded capacities since the work of Goldberg-Rao [J.ACM ’98].Our algorithm builds on the
+							framework of Chen-Kyng-Liu-Peng-Gutenberg-Sachdeva [FOCS ’22] that computes an optimal flow
+							by computing a sequence of \(m^{1+o(1)}\)-approximate undirected minimum-ratio cycles. We
+							develop a deterministic dynamic graph data-structure to compute such a sequence of
+							minimum-ratio cycles in an amortized \(m^{o(1)}\) time per edge update. Our key technical
+							contributions are deterministic analogues of the vertex sparsification and edge
+							sparsification components of the data-structure from Chen et al. For the vertex
+							sparsification component, we give a method to avoid the randomness in Chen et al. which
+							involved sampling random trees to recurse on. For the edge sparsification component, we
+							design a deterministic algorithm that maintains an embedding of a dynamic graph into a
+							sparse spanner. We also show how our dynamic spanner can be applied to give a deterministic
+							data structure that maintains a fully dynamic low-stretch spanning tree on graphs with
+							polynomially bounded edge lengths, with subpolynomial average stretch and subpolynomial
+							amortized time per edge update.
 						</p>
 					</div>
 				</div>
@@ -377,8 +608,18 @@
 					</div>
 					<div id="abstract42" class="abstract">
 						<p>
-							A symmetric matrix is called a Laplacian if it has nonpositive off-diagonal entries and zero row sums. Since the seminal work of Spielman and Teng (2004) on solving Laplacian linear systems in nearly linear time, several algorithms have been designed for the task. Yet, the work of Kyng and Sachdeva (2016) remains the simplest and most practical sequential solver. They presented a solver purely based on random sampling and without graph-theoretic constructions such as low-stretch trees and sparsifiers.</p>
-							<p>In this work, we extend the result of Kyng and Sachdeva to a simple parallel Laplacian solver with \(O(m \log^3 n\log\log n)\) or \(O((m+n\log^5 n)\log n\log\log n)\) work and \(O(\log^2 n\log\log n)\) depth using the ideas of block Cholesky factorization from Kyng et al. (2016). Compared to the best known parallel Laplacian solvers that achieve polylogarithmic depth due to Lee et al. (2015), our solver achieves both better depth and, for dense graphs, better work.
+							A symmetric matrix is called a Laplacian if it has nonpositive off-diagonal entries and zero
+							row sums. Since the seminal work of Spielman and Teng (2004) on solving Laplacian linear
+							systems in nearly linear time, several algorithms have been designed for the task. Yet, the
+							work of Kyng and Sachdeva (2016) remains the simplest and most practical sequential solver.
+							They presented a solver purely based on random sampling and without graph-theoretic
+							constructions such as low-stretch trees and sparsifiers.</p>
+						<p>In this work, we extend the result of Kyng and Sachdeva to a simple parallel Laplacian solver
+							with \(O(m \log^3 n\log\log n)\) or \(O((m+n\log^5 n)\log n\log\log n)\) work and \(O(\log^2
+							n\log\log n)\) depth using the ideas of block Cholesky factorization from Kyng et al.
+							(2016). Compared to the best known parallel Laplacian solvers that achieve polylogarithmic
+							depth due to Lee et al. (2015), our solver achieves both better depth and, for dense graphs,
+							better work.
 						</p>
 					</div>
 				</div>
@@ -594,13 +835,18 @@
 				<div class="article">
 					<div class="title">
 						Maximum Flow and Minimum-Cost Flow in Almost-Linear Time <br />
-						<span style="font-weight:bold;">Best Paper Award</span>
+						<span style="font-weight:bold;">Best Paper Award</span>,
+						<span style="font-weight:bold;">Frontiers of Science Award</span> 
 					</div>
 
 					<div class="conf">
 						<a href="https://focs2022.eecs.berkeley.edu/accepted_papers.html" target="_blank">
 							FOCS 2022
+						</a><br/>
+						<a href="https://cacm.acm.org/research-highlights/almost-linear-time-algorithms-for-maximum-flow-and-minimum-cost-flow/" target="_blank">
+							CACM 2023
 						</a>
+
 					</div>
 
 					<div class="author_list">
@@ -610,7 +856,6 @@
 							Probst Gutenberg
 						</span>
 					</div>
-
 
 					<div class="link_list">
 						<div class="link">
@@ -628,6 +873,9 @@
 						</div>
 						<div class="link">
 							<a href="https://youtu.be/WzoEa1owlJQ" target="_blank">Long Video</a>
+						</div>
+						<div class="link">
+							<a href="https://www.quantamagazine.org/researchers-achieve-absurdly-fast-algorithm-for-network-flow-20220608/" target="_blank">Quanta</a>
 						</div>
 					</div>
 
@@ -911,7 +1159,7 @@
 					</div>
 
 					<div class="conf">
-						<a href="https://epubs.siam.org/toc/smjcat/0/0" target="_blank">SICOMP 2020</a> <br />
+						<a href="https://epubs.siam.org/toc/smjcat/0/0" target="_blank">SICOMP 2023</a> <br />
 						<a href="https://www.irif.fr/~focs2018/accepted/" target="_blank"> FOCS 2018
 						</a>
 					</div>

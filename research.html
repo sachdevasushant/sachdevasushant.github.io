@@ -107,7 +107,7 @@
 					</div>
 					<div class="link_list">
 						<div class="link">
-							<a href="javascript:toggle('abstract49')">Abstract</a>
+							<a href="javascript:toggle('abstract51')">Abstract</a>
 						</div>
 						<div class="link">
 							<a href="" target="_blank">Conference</a>
@@ -116,7 +116,7 @@
 							<a href="https://arxiv.org/abs/2408.10172" target="_blank">arXiv</a>
 						</div>
 					</div>
-					<div id="abstract49" class="abstract">
+					<div id="abstract51" class="abstract">
 						<p>
 							We provide an algorithm that, given an $n$-vertex $m$-edge Eulerian graph with polynomially
 							bounded weights, computes an \(\breve{O}(n\log^{2} n \cdot \varepsilon^{-2})\)-edge
@@ -161,7 +161,7 @@
 					</div>
 					<div class="link_list">
 						<div class="link">
-							<a href="javascript:toggle('abstract48')">Abstract</a>
+							<a href="javascript:toggle('abstract50')">Abstract</a>
 						</div>
 						<div class="link">
 							<a href="" target="_blank">Conference</a>
@@ -170,7 +170,7 @@
 							<a href="https://arxiv.org/abs/2407.10830" target="_blank">arXiv</a>
 						</div>
 					</div>
-					<div id="abstract48" class="abstract">
+					<div id="abstract50" class="abstract">
 						<p>
 							We give the first almost-linear total time algorithm for deciding if a flow of cost at most
 							F still exists in a directed graph, with edge costs and capacities, undergoing decremental
@@ -191,6 +191,128 @@
 							2021] that also works in capacitated graphs. All our algorithms are deterministc, though
 							they can be sped up further using randomized techniques while still working against an
 							adaptive adversary.
+						</p>
+					</div>
+				</div>
+
+				<div class="article">
+					<div class="title">
+						Better Sparsifiers for Directed Eulerian Graphs
+					</div>
+					<div class="conf">
+						<a href="https://compose.ioc.ee/icalp2024/" target="_blank">ICALP 2024</a>
+					</div>
+					<div class="author_list">
+						with
+						<span class="authors">
+							A. Thudi, Y. Zhao
+						</span>
+					</div>
+					<div class="link_list">
+						<div class="link">
+							<a href="javascript:toggle('abstract49')">Abstract</a>
+						</div>
+						<div class="link">
+							<a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol297-icalp2024/LIPIcs.ICALP.2024.119/LIPIcs.ICALP.2024.119.pdf"
+								target="_blank">Conference</a>
+						</div>
+						<div class="link">
+							<a href="https://arxiv.org/abs/2311.06232" target="_blank">arXiv</a>
+						</div>
+					</div>
+					<div id="abstract49" class="abstract">
+						<p>
+							Spectral sparsification for directed Eulerian graphs is a key component in the design of
+							fast algorithms for solving directed Laplacian linear systems.
+							Directed Laplacian linear system solvers are crucial algorithmic primitives to fast
+							computation of fundamental problems on random walks, such as computing stationary
+							distributions, hitting and commute times, and personalized PageRank vectors.
+							While spectral sparsification is well understood for undirected graphs and it is known that
+							for every graph \(G,\) \((1+\varepsilon)\)-sparsifiers with \(O(n\varepsilon^{-2})\) edges
+							exist [Batson-Spielman-Srivastava, STOC '09] (which is optimal), the best known
+							constructions of Eulerian sparsifiers require \(\Omega(n\varepsilon^{-2}\log^4 n)\) edges
+							and are based on short-cycle decompositions [Chu et al., FOCS '18].</p>
+
+							<p>In this paper, we give improved constructions of Eulerian sparsifiers, specifically:</p>
+
+							<p>1. We show that for every directed Eulerian graph \(\vec{G},\) there exists an Eulerian
+							sparsifier with \(O(n\varepsilon^{-2} \log^2 n \log^2\log n + n\varepsilon^{-4/3}\log^{8/3}
+							n)\) edges. This result is based on combining short-cycle decompositions
+							[Chu-Gao-Peng-Sachdeva-Sawlani-Wang, FOCS '18, SICOMP] and [Parter-Yogev, ICALP '19], with
+							recent progress on the matrix Spencer conjecture [Bansal-Meka-Jiang, STOC '23].</p>
+
+							<p>2. We give an improved analysis of the constructions based on short-cycle decompositions,
+							giving an \(m^{1+\delta}\)-time algorithm for any constant \(\delta > 0\) for constructing
+							Eulerian sparsifiers with \(O(n\varepsilon^{-2}\log^3 n)\) edges.
+
+						</p>
+					</div>
+				</div>
+
+				<div class="article">
+					<div class="title">
+						Optimal Electrical Oblivious Routing on Expanders
+					</div>
+					<div class="conf">
+						<a href="https://compose.ioc.ee/icalp2024/" target="_blank">ICALP 2024</a>
+					</div>
+					<div class="author_list">
+						with
+						<span class="authors">
+							C. Florescu, R. Kyng, M. P. Gutenberg
+						</span>
+					</div>
+					<div class="link_list">
+						<div class="link">
+							<a href="javascript:toggle('abstract48')">Abstract</a>
+						</div>
+						<div class="link">
+							<a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol297-icalp2024/LIPIcs.ICALP.2024.65/LIPIcs.ICALP.2024.65.pdf"
+								target="_blank">Conference</a>
+						</div>
+						<div class="link">
+							<a href="https://arxiv.org/abs/2406.07252" target="_blank">arXiv</a>
+						</div>
+					</div>
+					<div id="abstract48" class="abstract">
+						<p>
+							"In this paper, we investigate the question of whether the electrical flow routing is a good
+							oblivious routing
+							scheme on an \(m\)-edge graph \(G = (V, E)\) that is a \(\Phi\)-expander, i.e. where
+							\(|\partial S| \geq \Phi
+							\cdot \text{vol}vol(S)\) for every \(S \subseteq V, \text{vol}(S) \leq \text{vol}(V)/2\).
+							Beyond its simplicity and structural
+							importance, this question is well-motivated by the current state-of-the-art of fast
+							algorithms for
+							\(\ell_{\infty}\) oblivious routings that reduce to the expander-case which is in turn
+							solved by electrical flow
+							routing.</p>
+
+						<p>Our main result proves that the electrical routing is an \(O(\Phi^{-1} \log m)\)-competitive
+							oblivious routing
+							in the \(\ell_1\)- and \(\ell_\infty\)-norms. We further observe that the oblivious routing
+							is \(O(\log^2
+							m)\)-competitive in the \(\ell_2\)-norm and, in fact, \(O(\log m)\)-competitive if
+							\(\ell_2\)-localization is
+							\(O(\log m)\) which is widely believed.</p>
+
+						<p>Using these three upper bounds, we can smoothly interpolate to obtain upper bounds for every
+							\(p \in [2,
+							\infty]\) and \(q\) given by \(1/p + 1/q = 1\). Assuming \(\ell_2\)-localization in \(O(\log
+							m)\), we obtain
+							that in \(\ell_p\) and \(\ell_q\), the electrical oblivious routing is
+							\(O(\Phi^{-(1-2/p)}\log m)\) competitive.
+							Using the currently known result for \(\ell_2\)-localization, this ratio deteriorates by at
+							most a
+							sublogarithmic factor for every \(p, q \neq 2\).</p>
+
+						<p>We complement our upper bounds with lower bounds that show that the electrical routing for
+							any such \(p\) and
+							\(q\) is \(\Omega(\Phi^{-(1-2/p)}\log m)\)-competitive. This renders our results in
+							\(\ell_1\) and
+							\(\ell_{\infty}\) unconditionally tight up to constants, and the result in any \(\ell_p\)-
+							and \(\ell_q\)-norm
+							to be tight in case of \(\ell_2\)-localization in \(O(\log m)\).</p>
 						</p>
 					</div>
 				</div>
@@ -258,7 +380,7 @@
 					<div class="author_list">
 						with
 						<span class="authors">
-							G. Goranci, M. Henzinger, H. R\"{a}cke, A. R. Sricharan
+							G. Goranci, M. Henzinger, H. Räcke, A. R. Sricharan
 						</span>
 					</div>
 					<div class="link_list">
@@ -651,13 +773,18 @@
 				<div class="article">
 					<div class="title">
 						Maximum Flow and Minimum-Cost Flow in Almost-Linear Time <br />
-						<span style="font-weight:bold;">Best Paper Award</span>
+						<span style="font-weight:bold;">Best Paper Award</span>,
+						<span style="font-weight:bold;">Frontiers of Science Award</span> 
 					</div>
 
 					<div class="conf">
 						<a href="https://focs2022.eecs.berkeley.edu/accepted_papers.html" target="_blank">
 							FOCS 2022
+						</a><br/>
+						<a href="https://cacm.acm.org/research-highlights/almost-linear-time-algorithms-for-maximum-flow-and-minimum-cost-flow/" target="_blank">
+							CACM 2023
 						</a>
+
 					</div>
 
 					<div class="author_list">
@@ -667,7 +794,6 @@
 							Probst Gutenberg
 						</span>
 					</div>
-
 
 					<div class="link_list">
 						<div class="link">
@@ -686,8 +812,10 @@
 						<div class="link">
 							<a href="https://youtu.be/WzoEa1owlJQ" target="_blank">Long Video</a>
 						</div>
+						<div class="link">
+							<a href="https://www.quantamagazine.org/researchers-achieve-absurdly-fast-algorithm-for-network-flow-20220608/" target="_blank">Quanta</a>
+						</div>
 					</div>
-
 
 
 					<div id="abstract38" class="abstract">
@@ -840,7 +968,7 @@
 					</div>
 
 					<div class="conf">
-						<a href="https://epubs.siam.org/toc/smjcat/0/0" target="_blank">SICOMP 2020</a> <br />
+						<a href="https://epubs.siam.org/toc/smjcat/0/0" target="_blank">SICOMP 2023</a> <br />
 						<a href="https://www.irif.fr/~focs2018/accepted/" target="_blank"> FOCS 2018
 						</a>
 					</div>
